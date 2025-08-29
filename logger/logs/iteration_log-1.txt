@@ -1,0 +1,2936 @@
+
+=== Seed 1 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Tue, 10 Jun 2025 10:17:51 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+=============================
+
+=== Seed 2 ===
+
+--- Request 1 ---
+{
+  "method": "HEAD",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Tue, 10 Jun 2025 10:17:51 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+=============================
+
+=== Seed 3 ===
+
+--- Request 1 ---
+{
+  "method": "POST",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Tue, 10 Jun 2025 10:17:51 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+=============================
+
+=== Seed 4 ===
+
+--- Request 1 ---
+{
+  "method": "PUT",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Tue, 10 Jun 2025 10:17:51 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+=============================
+
+=== Seed 5 ===
+
+--- Request 1 ---
+{
+  "method": "DELETE",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Tue, 10 Jun 2025 10:17:51 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+=============================
+
+=== Seed 6 ===
+
+--- Request 1 ---
+{
+  "method": "OPTIONS",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "",
+  "headers": {
+    "Allow": "GET,HEAD,POST,PUT,PATCH,DELETE,OPTIONS",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Tue, 10 Jun 2025 10:17:51 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+=============================
+
+=== Seed 7 ===
+
+--- Request 1 ---
+{
+  "method": "PATCH",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Tue, 10 Jun 2025 10:17:51 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+=============================
+
+=== Seed 8 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/owners",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "[{\"id\":1,\"firstName\":\"George\",\"lastName\":\"Franklin\",\"address\":\"110 W. Liberty St.\",\"city\":\"Madison\",\"telephone\":\"6085551023\",\"pets\":[{\"id\":1,\"name\":\"Leo\",\"birthDate\":\"2000/09/07\",\"type\":{\"id\":1,\"name\":\"cat\"},\"owner\":1,\"visits\":[]}]},{\"id\":2,\"firstName\":\"Betty\",\"lastName\":\"Davis\",\"address\":\"638 Cardinal Ave.\",\"city\":\"Sun Prairie\",\"telephone\":\"6085551749\",\"pets\":[{\"id\":2,\"name\":\"Basil\",\"birthDate\":\"2002/08/06\",\"type\":{\"id\":6,\"name\":\"hamster\"},\"owner\":2,\"visits\":[]}]},{\"id\":3,\"firstName\":\"Eduardo\",\"lastName\":\"Rodriquez\",\"address\":\"2693 Commerce St.\",\"city\":\"McFarland\",\"telephone\":\"6085558763\",\"pets\":[{\"id\":4,\"name\":\"Jewel\",\"birthDate\":\"2000/03/07\",\"type\":{\"id\":2,\"name\":\"dog\"},\"owner\":3,\"visits\":[]},{\"id\":3,\"name\":\"Rosy\",\"birthDate\":\"2001/04/17\",\"type\":{\"id\":2,\"name\":\"dog\"},\"owner\":3,\"visits\":[]}]},{\"id\":4,\"firstName\":\"Harold\",\"lastName\":\"Davis\",\"address\":\"563 Friendly St.\",\"city\":\"Windsor\",\"telephone\":\"6085553198\",\"pets\":[{\"id\":5,\"name\":\"Iggy\",\"birthDate\":\"2000/11/30\",\"type\":{\"id\":3,\"name\":\"lizard\"},\"owner\":4,\"visits\":[]}]},{\"id\":5,\"firstName\":\"Peter\",\"lastName\":\"McTavish\",\"address\":\"2387 S. Fair Way\",\"city\":\"Madison\",\"telephone\":\"6085552765\",\"pets\":[{\"id\":6,\"name\":\"George\",\"birthDate\":\"2000/01/20\",\"type\":{\"id\":4,\"name\":\"snake\"},\"owner\":5,\"visits\":[]}]},{\"id\":6,\"firstName\":\"Jean\",\"lastName\":\"Coleman\",\"address\":\"105 N. Lake St.\",\"city\":\"Monona\",\"telephone\":\"6085552654\",\"pets\":[{\"id\":8,\"name\":\"Max\",\"birthDate\":\"1995/09/04\",\"type\":{\"id\":1,\"name\":\"cat\"},\"owner\":6,\"visits\":[{\"id\":2,\"date\":\"2011/03/04\",\"description\":\"rabies shot\",\"pet\":8},{\"id\":3,\"date\":\"2009/06/04\",\"description\":\"neutered\",\"pet\":8}]},{\"id\":7,\"name\":\"Samantha\",\"birthDate\":\"1995/09/04\",\"type\":{\"id\":1,\"name\":\"cat\"},\"owner\":6,\"visits\":[{\"id\":1,\"date\":\"2010/03/04\",\"description\":\"rabies shot\",\"pet\":7},{\"id\":4,\"date\":\"2008/09/04\",\"description\":\"spayed\",\"pet\":7}]}]},{\"id\":7,\"firstName\":\"Jeff\",\"lastName\":\"Black\",\"address\":\"1450 Oak Blvd.\",\"city\":\"Monona\",\"telephone\":\"6085555387\",\"pets\":[{\"id\":9,\"name\":\"Lucky\",\"birthDate\":\"1999/08/06\",\"type\":{\"id\":5,\"name\":\"bird\"},\"owner\":7,\"visits\":[]}]},{\"id\":8,\"firstName\":\"Maria\",\"lastName\":\"Escobito\",\"address\":\"345 Maple St.\",\"city\":\"Madison\",\"telephone\":\"6085557683\",\"pets\":[{\"id\":10,\"name\":\"Mulligan\",\"birthDate\":\"1997/02/24\",\"type\":{\"id\":2,\"name\":\"dog\"},\"owner\":8,\"visits\":[]}]},{\"id\":9,\"firstName\":\"David\",\"lastName\":\"Schroeder\",\"address\":\"2749 Blackhawk Trail\",\"city\":\"Madison\",\"telephone\":\"6085559435\",\"pets\":[{\"id\":11,\"name\":\"Freddy\",\"birthDate\":\"2000/03/09\",\"type\":{\"id\":5,\"name\":\"bird\"},\"owner\":9,\"visits\":[]}]},{\"id\":10,\"firstName\":\"Carlos\",\"lastName\":\"Estaban\",\"address\":\"2335 Independence La.\",\"city\":\"Waunakee\",\"telephone\":\"6085555487\",\"pets\":[{\"id\":12,\"name\":\"Lucky\",\"birthDate\":\"2000/06/24\",\"type\":{\"id\":2,\"name\":\"dog\"},\"owner\":10,\"visits\":[]},{\"id\":13,\"name\":\"Sly\",\"birthDate\":\"2002/06/08\",\"type\":{\"id\":1,\"name\":\"cat\"},\"owner\":10,\"visits\":[]}]}]",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:51 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+=============================
+
+=== Seed 9 ===
+
+--- Request 1 ---
+{
+  "method": "POST",
+  "url": "/api/owners",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "address": "example-string",
+    "city": "example-string",
+    "firstName": "example-string",
+    "id": 123,
+    "lastName": "example-string",
+    "pets": [],
+    "telephone": "example-string"
+  }
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "errors": "[{\"objectName\":\"body\",\"fieldName\":\"id\",\"fieldValue\":\"123\",\"errorMessage\":\"must not be specified\"},{\"objectName\":\"owner\",\"fieldName\":\"telephone\",\"fieldValue\":\"example-string\",\"errorMessage\":\"numeric value out of bounds (<10 digits>.<0 digits> expected)\"}]",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Tue, 10 Jun 2025 10:17:51 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Seed 10 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/pets",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "[{\"id\":1,\"name\":\"Leo\",\"birthDate\":\"2000/09/07\",\"type\":{\"id\":1,\"name\":\"cat\"},\"owner\":{\"id\":1,\"firstName\":\"George\",\"lastName\":\"Franklin\",\"address\":\"110 W. Liberty St.\",\"city\":\"Madison\",\"telephone\":\"6085551023\"},\"visits\":[]},{\"id\":2,\"name\":\"Basil\",\"birthDate\":\"2002/08/06\",\"type\":{\"id\":6,\"name\":\"hamster\"},\"owner\":{\"id\":2,\"firstName\":\"Betty\",\"lastName\":\"Davis\",\"address\":\"638 Cardinal Ave.\",\"city\":\"Sun Prairie\",\"telephone\":\"6085551749\"},\"visits\":[]},{\"id\":3,\"name\":\"Rosy\",\"birthDate\":\"2001/04/17\",\"type\":{\"id\":2,\"name\":\"dog\"},\"owner\":{\"id\":3,\"firstName\":\"Eduardo\",\"lastName\":\"Rodriquez\",\"address\":\"2693 Commerce St.\",\"city\":\"McFarland\",\"telephone\":\"6085558763\"},\"visits\":[]},{\"id\":4,\"name\":\"Jewel\",\"birthDate\":\"2000/03/07\",\"type\":{\"id\":2,\"name\":\"dog\"},\"owner\":{\"id\":3,\"firstName\":\"Eduardo\",\"lastName\":\"Rodriquez\",\"address\":\"2693 Commerce St.\",\"city\":\"McFarland\",\"telephone\":\"6085558763\"},\"visits\":[]},{\"id\":5,\"name\":\"Iggy\",\"birthDate\":\"2000/11/30\",\"type\":{\"id\":3,\"name\":\"lizard\"},\"owner\":{\"id\":4,\"firstName\":\"Harold\",\"lastName\":\"Davis\",\"address\":\"563 Friendly St.\",\"city\":\"Windsor\",\"telephone\":\"6085553198\"},\"visits\":[]},{\"id\":6,\"name\":\"George\",\"birthDate\":\"2000/01/20\",\"type\":{\"id\":4,\"name\":\"snake\"},\"owner\":{\"id\":5,\"firstName\":\"Peter\",\"lastName\":\"McTavish\",\"address\":\"2387 S. Fair Way\",\"city\":\"Madison\",\"telephone\":\"6085552765\"},\"visits\":[]},{\"id\":7,\"name\":\"Samantha\",\"birthDate\":\"1995/09/04\",\"type\":{\"id\":1,\"name\":\"cat\"},\"owner\":{\"id\":6,\"firstName\":\"Jean\",\"lastName\":\"Coleman\",\"address\":\"105 N. Lake St.\",\"city\":\"Monona\",\"telephone\":\"6085552654\"},\"visits\":[{\"id\":1,\"date\":\"2010/03/04\",\"description\":\"rabies shot\",\"pet\":7},{\"id\":4,\"date\":\"2008/09/04\",\"description\":\"spayed\",\"pet\":7}]},{\"id\":8,\"name\":\"Max\",\"birthDate\":\"1995/09/04\",\"type\":{\"id\":1,\"name\":\"cat\"},\"owner\":{\"id\":6,\"firstName\":\"Jean\",\"lastName\":\"Coleman\",\"address\":\"105 N. Lake St.\",\"city\":\"Monona\",\"telephone\":\"6085552654\"},\"visits\":[{\"id\":2,\"date\":\"2011/03/04\",\"description\":\"rabies shot\",\"pet\":8},{\"id\":3,\"date\":\"2009/06/04\",\"description\":\"neutered\",\"pet\":8}]},{\"id\":9,\"name\":\"Lucky\",\"birthDate\":\"1999/08/06\",\"type\":{\"id\":5,\"name\":\"bird\"},\"owner\":{\"id\":7,\"firstName\":\"Jeff\",\"lastName\":\"Black\",\"address\":\"1450 Oak Blvd.\",\"city\":\"Monona\",\"telephone\":\"6085555387\"},\"visits\":[]},{\"id\":10,\"name\":\"Mulligan\",\"birthDate\":\"1997/02/24\",\"type\":{\"id\":2,\"name\":\"dog\"},\"owner\":{\"id\":8,\"firstName\":\"Maria\",\"lastName\":\"Escobito\",\"address\":\"345 Maple St.\",\"city\":\"Madison\",\"telephone\":\"6085557683\"},\"visits\":[]},{\"id\":11,\"name\":\"Freddy\",\"birthDate\":\"2000/03/09\",\"type\":{\"id\":5,\"name\":\"bird\"},\"owner\":{\"id\":9,\"firstName\":\"David\",\"lastName\":\"Schroeder\",\"address\":\"2749 Blackhawk Trail\",\"city\":\"Madison\",\"telephone\":\"6085559435\"},\"visits\":[]},{\"id\":12,\"name\":\"Lucky\",\"birthDate\":\"2000/06/24\",\"type\":{\"id\":2,\"name\":\"dog\"},\"owner\":{\"id\":10,\"firstName\":\"Carlos\",\"lastName\":\"Estaban\",\"address\":\"2335 Independence La.\",\"city\":\"Waunakee\",\"telephone\":\"6085555487\"},\"visits\":[]},{\"id\":13,\"name\":\"Sly\",\"birthDate\":\"2002/06/08\",\"type\":{\"id\":1,\"name\":\"cat\"},\"owner\":{\"id\":10,\"firstName\":\"Carlos\",\"lastName\":\"Estaban\",\"address\":\"2335 Independence La.\",\"city\":\"Waunakee\",\"telephone\":\"6085555487\"},\"visits\":[]}]",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:52 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+=============================
+
+=== Seed 11 ===
+
+--- Request 1 ---
+{
+  "method": "POST",
+  "url": "/api/pets",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "birthDate": "example-string",
+    "id": 123,
+    "name": "example-string",
+    "owner": "value",
+    "type": "value",
+    "visits": []
+  }
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Tue, 10 Jun 2025 10:17:52 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Seed 12 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/pets/pettypes",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "[{\"id\":5,\"name\":\"bird\"},{\"id\":1,\"name\":\"cat\"},{\"id\":2,\"name\":\"dog\"},{\"id\":6,\"name\":\"hamster\"},{\"id\":3,\"name\":\"lizard\"},{\"id\":4,\"name\":\"snake\"}]",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:52 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+=============================
+
+=== Seed 13 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/pettypes",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "[{\"id\":5,\"name\":\"bird\"},{\"id\":1,\"name\":\"cat\"},{\"id\":2,\"name\":\"dog\"},{\"id\":6,\"name\":\"hamster\"},{\"id\":3,\"name\":\"lizard\"},{\"id\":4,\"name\":\"snake\"}]",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:52 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+=============================
+
+=== Seed 14 ===
+
+--- Request 1 ---
+{
+  "method": "POST",
+  "url": "/api/pettypes",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "id": 123,
+    "name": "example-string"
+  }
+}
+--- Response 1 ---
+{
+  "status": 201,
+  "body": "{\"id\":123,\"name\":\"example-string\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Location": "http://localhost:8080/petclinic/api/pettypes/123",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:52 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+=============================
+
+=== Seed 15 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/specialties",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "[{\"id\":3,\"name\":\"dentistry\"},{\"id\":1,\"name\":\"radiology\"},{\"id\":2,\"name\":\"surgery\"}]",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:52 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+=============================
+
+=== Seed 16 ===
+
+--- Request 1 ---
+{
+  "method": "POST",
+  "url": "/api/specialties",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "id": 123,
+    "name": "example-string"
+  }
+}
+--- Response 1 ---
+{
+  "status": 201,
+  "body": "{\"id\":123,\"name\":\"example-string\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Location": "http://localhost:8080/petclinic/api/specialtys/123",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:52 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+=============================
+
+=== Seed 17 ===
+
+--- Request 1 ---
+{
+  "method": "POST",
+  "url": "/api/users",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "enabled": true,
+    "password": "example-string",
+    "roles": [],
+    "username": "example-string"
+  }
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.Exception\",\"exMessage\":\"User must have at least a role set!\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "85",
+    "Date": "Tue, 10 Jun 2025 10:17:52 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Seed 18 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/vets",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "[{\"id\":1,\"firstName\":\"James\",\"lastName\":\"Carter\",\"specialties\":[]},{\"id\":2,\"firstName\":\"Helen\",\"lastName\":\"Leary\",\"specialties\":[{\"id\":1,\"name\":\"radiology\"}]},{\"id\":3,\"firstName\":\"Linda\",\"lastName\":\"Douglas\",\"specialties\":[{\"id\":3,\"name\":\"dentistry\"},{\"id\":2,\"name\":\"surgery\"}]},{\"id\":4,\"firstName\":\"Rafael\",\"lastName\":\"Ortega\",\"specialties\":[{\"id\":2,\"name\":\"surgery\"}]},{\"id\":5,\"firstName\":\"Henry\",\"lastName\":\"Stevens\",\"specialties\":[{\"id\":1,\"name\":\"radiology\"}]},{\"id\":6,\"firstName\":\"Sharon\",\"lastName\":\"Jenkins\",\"specialties\":[]}]",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:52 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+=============================
+
+=== Seed 19 ===
+
+--- Request 1 ---
+{
+  "method": "POST",
+  "url": "/api/vets",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "firstName": "example-string",
+    "id": 123,
+    "lastName": "example-string",
+    "specialties": []
+  }
+}
+--- Response 1 ---
+{
+  "status": 201,
+  "body": "{\"id\":123,\"firstName\":\"example-string\",\"lastName\":\"example-string\",\"specialties\":[]}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Location": "http://localhost:8080/petclinic/api/vets/123",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:52 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+=============================
+
+=== Seed 20 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/visits",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "[{\"id\":1,\"date\":\"2010/03/04\",\"description\":\"rabies shot\",\"pet\":{\"id\":7,\"name\":\"Samantha\",\"birthDate\":\"1995/09/04\",\"type\":{\"id\":1,\"name\":\"cat\"},\"owner\":{\"id\":6,\"firstName\":\"Jean\",\"lastName\":\"Coleman\",\"address\":\"105 N. Lake St.\",\"city\":\"Monona\",\"telephone\":\"6085552654\"}}},{\"id\":2,\"date\":\"2011/03/04\",\"description\":\"rabies shot\",\"pet\":{\"id\":8,\"name\":\"Max\",\"birthDate\":\"1995/09/04\",\"type\":{\"id\":1,\"name\":\"cat\"},\"owner\":{\"id\":6,\"firstName\":\"Jean\",\"lastName\":\"Coleman\",\"address\":\"105 N. Lake St.\",\"city\":\"Monona\",\"telephone\":\"6085552654\"}}},{\"id\":3,\"date\":\"2009/06/04\",\"description\":\"neutered\",\"pet\":{\"id\":8,\"name\":\"Max\",\"birthDate\":\"1995/09/04\",\"type\":{\"id\":1,\"name\":\"cat\"},\"owner\":{\"id\":6,\"firstName\":\"Jean\",\"lastName\":\"Coleman\",\"address\":\"105 N. Lake St.\",\"city\":\"Monona\",\"telephone\":\"6085552654\"}}},{\"id\":4,\"date\":\"2008/09/04\",\"description\":\"spayed\",\"pet\":{\"id\":7,\"name\":\"Samantha\",\"birthDate\":\"1995/09/04\",\"type\":{\"id\":1,\"name\":\"cat\"},\"owner\":{\"id\":6,\"firstName\":\"Jean\",\"lastName\":\"Coleman\",\"address\":\"105 N. Lake St.\",\"city\":\"Monona\",\"telephone\":\"6085552654\"}}}]",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:52 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+=============================
+
+=== Seed 21 ===
+
+--- Request 1 ---
+{
+  "method": "POST",
+  "url": "/api/visits",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "date": "yyyy/MM/dd",
+    "description": "example-string",
+    "id": 123,
+    "pet": "value"
+  }
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Tue, 10 Jun 2025 10:17:52 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Seed 22 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-06-10T10:17:52.538+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:52 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Seed 23 ===
+
+--- Request 1 ---
+{
+  "method": "HEAD",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 500,
+  "body": "",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:52 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Seed 24 ===
+
+--- Request 1 ---
+{
+  "method": "POST",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-06-10T10:17:52.556+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:52 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Seed 25 ===
+
+--- Request 1 ---
+{
+  "method": "PUT",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-06-10T10:17:52.561+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:52 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Seed 26 ===
+
+--- Request 1 ---
+{
+  "method": "DELETE",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-06-10T10:17:52.566+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:52 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Seed 27 ===
+
+--- Request 1 ---
+{
+  "method": "OPTIONS",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "",
+  "headers": {
+    "Allow": "GET,HEAD,POST,PUT,PATCH,DELETE,OPTIONS",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Tue, 10 Jun 2025 10:17:52 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+=============================
+
+=== Seed 28 ===
+
+--- Request 1 ---
+{
+  "method": "PATCH",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-06-10T10:17:52.576+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:52 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 1 ===
+
+--- Request 1 ---
+{
+  "method": "POST",
+  "url": "/api/vets",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "firstName": "example-string",
+    "id": 123,
+    "lastName": "example-string",
+    "specialties": []
+  }
+}
+--- Response 1 ---
+{
+  "status": 201,
+  "body": "{\"id\":123,\"firstName\":\"example-string\",\"lastName\":\"example-string\",\"specialties\":[]}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Location": "http://localhost:8080/petclinic/api/vets/123",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:52 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 2 ---
+{
+  "method": "OPTIONS",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 2 ---
+{
+  "status": 200,
+  "body": "",
+  "headers": {
+    "Allow": "GET,HEAD,POST,PUT,PATCH,DELETE,OPTIONS",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Tue, 10 Jun 2025 10:17:52 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+=============================
+
+=== Iteration 2 ===
+
+--- Request 1 ---
+{
+  "method": "POST",
+  "url": "/api/vets",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "firstName": "example-string",
+    "id": 123,
+    "lastName": "example-string",
+    "specialties": []
+  }
+}
+--- Response 1 ---
+{
+  "status": 201,
+  "body": "{\"id\":123,\"firstName\":\"example-string\",\"lastName\":\"example-string\",\"specialties\":[]}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Location": "http://localhost:8080/petclinic/api/vets/123",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:52 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 2 ---
+{
+  "method": "OPTIONS",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 2 ---
+{
+  "status": 200,
+  "body": "",
+  "headers": {
+    "Allow": "GET,HEAD,POST,PUT,PATCH,DELETE,OPTIONS",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Tue, 10 Jun 2025 10:17:52 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 3 ---
+{
+  "method": "GET",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 3 ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Tue, 10 Jun 2025 10:17:52 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+=============================
+
+=== Iteration 3 ===
+
+--- Request 1 ---
+{
+  "method": "POST",
+  "url": "/api/vets",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "firstName": "example-string",
+    "id": 123,
+    "lastName": "example-string",
+    "specialties": []
+  }
+}
+--- Response 1 ---
+{
+  "status": 201,
+  "body": "{\"id\":123,\"firstName\":\"example-string\",\"lastName\":\"example-string\",\"specialties\":[]}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Location": "http://localhost:8080/petclinic/api/vets/123",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:52 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 2 ---
+{
+  "method": "OPTIONS",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 2 ---
+{
+  "status": 200,
+  "body": "",
+  "headers": {
+    "Allow": "GET,HEAD,POST,PUT,PATCH,DELETE,OPTIONS",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Tue, 10 Jun 2025 10:17:52 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 3 ---
+{
+  "method": "GET",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 3 ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Tue, 10 Jun 2025 10:17:52 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 4 ---
+{
+  "method": "PUT",
+  "url": "/api/visits/2",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "date": "yyyy/MM/dd",
+    "description": "example-string",
+    "id": 123,
+    "pet": "value"
+  }
+}
+--- Response 4 ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Tue, 10 Jun 2025 10:17:52 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 4 ===
+
+--- Request 1 ---
+{
+  "method": "POST",
+  "url": "/api/vets",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "firstName": "example-string",
+    "id": 123,
+    "lastName": "example-string",
+    "specialties": []
+  }
+}
+--- Response 1 ---
+{
+  "status": 201,
+  "body": "{\"id\":123,\"firstName\":\"example-string\",\"lastName\":\"example-string\",\"specialties\":[]}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Location": "http://localhost:8080/petclinic/api/vets/123",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:53 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 2 ---
+{
+  "method": "OPTIONS",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 2 ---
+{
+  "status": 200,
+  "body": "",
+  "headers": {
+    "Allow": "GET,HEAD,POST,PUT,PATCH,DELETE,OPTIONS",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Tue, 10 Jun 2025 10:17:53 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 3 ---
+{
+  "method": "GET",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 3 ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Tue, 10 Jun 2025 10:17:53 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 4 ---
+{
+  "method": "PUT",
+  "url": "/api/visits/2",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "date": "yyyy/MM/dd",
+    "description": "example-string",
+    "id": 123,
+    "pet": "value"
+  }
+}
+--- Response 4 ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Tue, 10 Jun 2025 10:17:53 GMT",
+    "Connection": "close"
+  }
+}
+--- Request 5 ---
+{
+  "method": "GET",
+  "url": "/api/specialties",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 5 ---
+{
+  "status": 200,
+  "body": "[{\"id\":3,\"name\":\"dentistry\"},{\"id\":4,\"name\":\"example-string\"},{\"id\":1,\"name\":\"radiology\"},{\"id\":2,\"name\":\"surgery\"}]",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:53 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+=============================
+
+=== Iteration 5 ===
+
+--- Request 1 ---
+{
+  "method": "POST",
+  "url": "/api/vets",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "firstName": "example-string",
+    "id": 123,
+    "lastName": "example-string",
+    "specialties": []
+  }
+}
+--- Response 1 ---
+{
+  "status": 201,
+  "body": "{\"id\":123,\"firstName\":\"example-string\",\"lastName\":\"example-string\",\"specialties\":[]}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Location": "http://localhost:8080/petclinic/api/vets/123",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:53 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 2 ---
+{
+  "method": "OPTIONS",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 2 ---
+{
+  "status": 200,
+  "body": "",
+  "headers": {
+    "Allow": "GET,HEAD,POST,PUT,PATCH,DELETE,OPTIONS",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Tue, 10 Jun 2025 10:17:53 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 3 ---
+{
+  "method": "GET",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 3 ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Tue, 10 Jun 2025 10:17:53 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 4 ---
+{
+  "method": "PUT",
+  "url": "/api/visits/2",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "date": "yyyy/MM/dd",
+    "description": "example-string",
+    "id": 123,
+    "pet": "value"
+  }
+}
+--- Response 4 ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Tue, 10 Jun 2025 10:17:53 GMT",
+    "Connection": "close"
+  }
+}
+--- Request 5 ---
+{
+  "method": "GET",
+  "url": "/api/specialties",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 5 ---
+{
+  "status": 200,
+  "body": "[{\"id\":3,\"name\":\"dentistry\"},{\"id\":4,\"name\":\"example-string\"},{\"id\":1,\"name\":\"radiology\"},{\"id\":2,\"name\":\"surgery\"}]",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:53 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 6 ---
+{
+  "method": "PUT",
+  "url": "/api/owners/11",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "address": "example-string",
+    "city": "example-string",
+    "firstName": "example-string",
+    "id": 123,
+    "lastName": "example-string",
+    "pets": [],
+    "telephone": "example-string"
+  }
+}
+--- Response 6 ---
+{
+  "status": 400,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "errors": "[{\"objectName\":\"body\",\"fieldName\":\"id\",\"fieldValue\":\"123\",\"errorMessage\":\"does not match pathId: 11\"},{\"objectName\":\"owner\",\"fieldName\":\"telephone\",\"fieldValue\":\"example-string\",\"errorMessage\":\"numeric value out of bounds (<10 digits>.<0 digits> expected)\"}]",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Tue, 10 Jun 2025 10:17:53 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 6 ===
+
+--- Request 1 ---
+{
+  "method": "POST",
+  "url": "/api/vets",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "firstName": "example-string",
+    "id": 123,
+    "lastName": "example-string",
+    "specialties": []
+  }
+}
+--- Response 1 ---
+{
+  "status": 201,
+  "body": "{\"id\":123,\"firstName\":\"example-string\",\"lastName\":\"example-string\",\"specialties\":[]}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Location": "http://localhost:8080/petclinic/api/vets/123",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:53 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 2 ---
+{
+  "method": "OPTIONS",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 2 ---
+{
+  "status": 200,
+  "body": "",
+  "headers": {
+    "Allow": "GET,HEAD,POST,PUT,PATCH,DELETE,OPTIONS",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Tue, 10 Jun 2025 10:17:53 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 3 ---
+{
+  "method": "GET",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 3 ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Tue, 10 Jun 2025 10:17:53 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 4 ---
+{
+  "method": "PUT",
+  "url": "/api/visits/2",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "date": "yyyy/MM/dd",
+    "description": "example-string",
+    "id": 123,
+    "pet": "value"
+  }
+}
+--- Response 4 ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Tue, 10 Jun 2025 10:17:53 GMT",
+    "Connection": "close"
+  }
+}
+--- Request 5 ---
+{
+  "method": "GET",
+  "url": "/api/specialties",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 5 ---
+{
+  "status": 200,
+  "body": "[{\"id\":3,\"name\":\"dentistry\"},{\"id\":4,\"name\":\"example-string\"},{\"id\":1,\"name\":\"radiology\"},{\"id\":2,\"name\":\"surgery\"}]",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:53 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 6 ---
+{
+  "method": "PUT",
+  "url": "/api/owners/11",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "address": "example-string",
+    "city": "example-string",
+    "firstName": "example-string",
+    "id": 123,
+    "lastName": "example-string",
+    "pets": [],
+    "telephone": "example-string"
+  }
+}
+--- Response 6 ---
+{
+  "status": 400,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "errors": "[{\"objectName\":\"body\",\"fieldName\":\"id\",\"fieldValue\":\"123\",\"errorMessage\":\"does not match pathId: 11\"},{\"objectName\":\"owner\",\"fieldName\":\"telephone\",\"fieldValue\":\"example-string\",\"errorMessage\":\"numeric value out of bounds (<10 digits>.<0 digits> expected)\"}]",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Tue, 10 Jun 2025 10:17:53 GMT",
+    "Connection": "close"
+  }
+}
+--- Request 7 ---
+{
+  "method": "GET",
+  "url": "/api/pettypes/2",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 7 ---
+{
+  "status": 200,
+  "body": "{\"id\":2,\"name\":\"dog\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:53 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+=============================
+
+=== Iteration 7 ===
+
+--- Request 1 ---
+{
+  "method": "POST",
+  "url": "/api/vets",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "firstName": "example-string",
+    "id": 123,
+    "lastName": "example-string",
+    "specialties": []
+  }
+}
+--- Response 1 ---
+{
+  "status": 201,
+  "body": "{\"id\":123,\"firstName\":\"example-string\",\"lastName\":\"example-string\",\"specialties\":[]}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Location": "http://localhost:8080/petclinic/api/vets/123",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:53 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 2 ---
+{
+  "method": "OPTIONS",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 2 ---
+{
+  "status": 200,
+  "body": "",
+  "headers": {
+    "Allow": "GET,HEAD,POST,PUT,PATCH,DELETE,OPTIONS",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Tue, 10 Jun 2025 10:17:53 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 3 ---
+{
+  "method": "GET",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 3 ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Tue, 10 Jun 2025 10:17:53 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 4 ---
+{
+  "method": "PUT",
+  "url": "/api/visits/2",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "date": "yyyy/MM/dd",
+    "description": "example-string",
+    "id": 123,
+    "pet": "value"
+  }
+}
+--- Response 4 ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Tue, 10 Jun 2025 10:17:53 GMT",
+    "Connection": "close"
+  }
+}
+--- Request 5 ---
+{
+  "method": "GET",
+  "url": "/api/specialties",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 5 ---
+{
+  "status": 200,
+  "body": "[{\"id\":3,\"name\":\"dentistry\"},{\"id\":4,\"name\":\"example-string\"},{\"id\":1,\"name\":\"radiology\"},{\"id\":2,\"name\":\"surgery\"}]",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:53 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 6 ---
+{
+  "method": "PUT",
+  "url": "/api/owners/11",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "address": "example-string",
+    "city": "example-string",
+    "firstName": "example-string",
+    "id": 123,
+    "lastName": "example-string",
+    "pets": [],
+    "telephone": "example-string"
+  }
+}
+--- Response 6 ---
+{
+  "status": 400,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "errors": "[{\"objectName\":\"body\",\"fieldName\":\"id\",\"fieldValue\":\"123\",\"errorMessage\":\"does not match pathId: 11\"},{\"objectName\":\"owner\",\"fieldName\":\"telephone\",\"fieldValue\":\"example-string\",\"errorMessage\":\"numeric value out of bounds (<10 digits>.<0 digits> expected)\"}]",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Tue, 10 Jun 2025 10:17:53 GMT",
+    "Connection": "close"
+  }
+}
+--- Request 7 ---
+{
+  "method": "GET",
+  "url": "/api/pettypes/2",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 7 ---
+{
+  "status": 200,
+  "body": "{\"id\":2,\"name\":\"dog\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:53 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 8 ---
+{
+  "method": "GET",
+  "url": "/api/visits",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 8 ---
+{
+  "status": 200,
+  "body": "[{\"id\":1,\"date\":\"2010/03/04\",\"description\":\"rabies shot\",\"pet\":{\"id\":7,\"name\":\"Samantha\",\"birthDate\":\"1995/09/04\",\"type\":{\"id\":1,\"name\":\"cat\"},\"owner\":{\"id\":6,\"firstName\":\"Jean\",\"lastName\":\"Coleman\",\"address\":\"105 N. Lake St.\",\"city\":\"Monona\",\"telephone\":\"6085552654\"}}},{\"id\":2,\"date\":\"2011/03/04\",\"description\":\"rabies shot\",\"pet\":{\"id\":8,\"name\":\"Max\",\"birthDate\":\"1995/09/04\",\"type\":{\"id\":1,\"name\":\"cat\"},\"owner\":{\"id\":6,\"firstName\":\"Jean\",\"lastName\":\"Coleman\",\"address\":\"105 N. Lake St.\",\"city\":\"Monona\",\"telephone\":\"6085552654\"}}},{\"id\":3,\"date\":\"2009/06/04\",\"description\":\"neutered\",\"pet\":{\"id\":8,\"name\":\"Max\",\"birthDate\":\"1995/09/04\",\"type\":{\"id\":1,\"name\":\"cat\"},\"owner\":{\"id\":6,\"firstName\":\"Jean\",\"lastName\":\"Coleman\",\"address\":\"105 N. Lake St.\",\"city\":\"Monona\",\"telephone\":\"6085552654\"}}},{\"id\":4,\"date\":\"2008/09/04\",\"description\":\"spayed\",\"pet\":{\"id\":7,\"name\":\"Samantha\",\"birthDate\":\"1995/09/04\",\"type\":{\"id\":1,\"name\":\"cat\"},\"owner\":{\"id\":6,\"firstName\":\"Jean\",\"lastName\":\"Coleman\",\"address\":\"105 N. Lake St.\",\"city\":\"Monona\",\"telephone\":\"6085552654\"}}}]",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:53 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+=============================
+
+=== Iteration 8 ===
+
+--- Request 1 ---
+{
+  "method": "POST",
+  "url": "/api/vets",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "firstName": "example-string",
+    "id": 123,
+    "lastName": "example-string",
+    "specialties": []
+  }
+}
+--- Response 1 ---
+{
+  "status": 201,
+  "body": "{\"id\":123,\"firstName\":\"example-string\",\"lastName\":\"example-string\",\"specialties\":[]}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Location": "http://localhost:8080/petclinic/api/vets/123",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:54 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 2 ---
+{
+  "method": "OPTIONS",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 2 ---
+{
+  "status": 200,
+  "body": "",
+  "headers": {
+    "Allow": "GET,HEAD,POST,PUT,PATCH,DELETE,OPTIONS",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Tue, 10 Jun 2025 10:17:54 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 3 ---
+{
+  "method": "GET",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 3 ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Tue, 10 Jun 2025 10:17:54 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 4 ---
+{
+  "method": "PUT",
+  "url": "/api/visits/2",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "date": "yyyy/MM/dd",
+    "description": "example-string",
+    "id": 123,
+    "pet": "value"
+  }
+}
+--- Response 4 ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Tue, 10 Jun 2025 10:17:54 GMT",
+    "Connection": "close"
+  }
+}
+--- Request 5 ---
+{
+  "method": "GET",
+  "url": "/api/specialties",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 5 ---
+{
+  "status": 200,
+  "body": "[{\"id\":3,\"name\":\"dentistry\"},{\"id\":4,\"name\":\"example-string\"},{\"id\":1,\"name\":\"radiology\"},{\"id\":2,\"name\":\"surgery\"}]",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:54 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 6 ---
+{
+  "method": "PUT",
+  "url": "/api/owners/11",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "address": "example-string",
+    "city": "example-string",
+    "firstName": "example-string",
+    "id": 123,
+    "lastName": "example-string",
+    "pets": [],
+    "telephone": "example-string"
+  }
+}
+--- Response 6 ---
+{
+  "status": 400,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "errors": "[{\"objectName\":\"body\",\"fieldName\":\"id\",\"fieldValue\":\"123\",\"errorMessage\":\"does not match pathId: 11\"},{\"objectName\":\"owner\",\"fieldName\":\"telephone\",\"fieldValue\":\"example-string\",\"errorMessage\":\"numeric value out of bounds (<10 digits>.<0 digits> expected)\"}]",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Tue, 10 Jun 2025 10:17:54 GMT",
+    "Connection": "close"
+  }
+}
+--- Request 7 ---
+{
+  "method": "GET",
+  "url": "/api/pettypes/2",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 7 ---
+{
+  "status": 200,
+  "body": "{\"id\":2,\"name\":\"dog\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:54 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 8 ---
+{
+  "method": "GET",
+  "url": "/api/visits",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 8 ---
+{
+  "status": 200,
+  "body": "[{\"id\":1,\"date\":\"2010/03/04\",\"description\":\"rabies shot\",\"pet\":{\"id\":7,\"name\":\"Samantha\",\"birthDate\":\"1995/09/04\",\"type\":{\"id\":1,\"name\":\"cat\"},\"owner\":{\"id\":6,\"firstName\":\"Jean\",\"lastName\":\"Coleman\",\"address\":\"105 N. Lake St.\",\"city\":\"Monona\",\"telephone\":\"6085552654\"}}},{\"id\":2,\"date\":\"2011/03/04\",\"description\":\"rabies shot\",\"pet\":{\"id\":8,\"name\":\"Max\",\"birthDate\":\"1995/09/04\",\"type\":{\"id\":1,\"name\":\"cat\"},\"owner\":{\"id\":6,\"firstName\":\"Jean\",\"lastName\":\"Coleman\",\"address\":\"105 N. Lake St.\",\"city\":\"Monona\",\"telephone\":\"6085552654\"}}},{\"id\":3,\"date\":\"2009/06/04\",\"description\":\"neutered\",\"pet\":{\"id\":8,\"name\":\"Max\",\"birthDate\":\"1995/09/04\",\"type\":{\"id\":1,\"name\":\"cat\"},\"owner\":{\"id\":6,\"firstName\":\"Jean\",\"lastName\":\"Coleman\",\"address\":\"105 N. Lake St.\",\"city\":\"Monona\",\"telephone\":\"6085552654\"}}},{\"id\":4,\"date\":\"2008/09/04\",\"description\":\"spayed\",\"pet\":{\"id\":7,\"name\":\"Samantha\",\"birthDate\":\"1995/09/04\",\"type\":{\"id\":1,\"name\":\"cat\"},\"owner\":{\"id\":6,\"firstName\":\"Jean\",\"lastName\":\"Coleman\",\"address\":\"105 N. Lake St.\",\"city\":\"Monona\",\"telephone\":\"6085552654\"}}}]",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:54 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 9 ---
+{
+  "method": "GET",
+  "url": "/api/owners/*/lastname/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 9 ---
+{
+  "status": 404,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Tue, 10 Jun 2025 10:17:54 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+=============================
+
+=== Iteration 9 ===
+
+--- Request 1 ---
+{
+  "method": "POST",
+  "url": "/api/vets",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "firstName": "example-string",
+    "id": 123,
+    "lastName": "example-string",
+    "specialties": []
+  }
+}
+--- Response 1 ---
+{
+  "status": 201,
+  "body": "{\"id\":123,\"firstName\":\"example-string\",\"lastName\":\"example-string\",\"specialties\":[]}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Location": "http://localhost:8080/petclinic/api/vets/123",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:54 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 2 ---
+{
+  "method": "OPTIONS",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 2 ---
+{
+  "status": 200,
+  "body": "",
+  "headers": {
+    "Allow": "GET,HEAD,POST,PUT,PATCH,DELETE,OPTIONS",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Tue, 10 Jun 2025 10:17:54 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 3 ---
+{
+  "method": "GET",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 3 ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Tue, 10 Jun 2025 10:17:54 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 4 ---
+{
+  "method": "PUT",
+  "url": "/api/visits/2",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "date": "yyyy/MM/dd",
+    "description": "example-string",
+    "id": 123,
+    "pet": "value"
+  }
+}
+--- Response 4 ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Tue, 10 Jun 2025 10:17:54 GMT",
+    "Connection": "close"
+  }
+}
+--- Request 5 ---
+{
+  "method": "GET",
+  "url": "/api/specialties",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 5 ---
+{
+  "status": 200,
+  "body": "[{\"id\":3,\"name\":\"dentistry\"},{\"id\":4,\"name\":\"example-string\"},{\"id\":1,\"name\":\"radiology\"},{\"id\":2,\"name\":\"surgery\"}]",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:54 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 6 ---
+{
+  "method": "PUT",
+  "url": "/api/owners/11",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "address": "example-string",
+    "city": "example-string",
+    "firstName": "example-string",
+    "id": 123,
+    "lastName": "example-string",
+    "pets": [],
+    "telephone": "example-string"
+  }
+}
+--- Response 6 ---
+{
+  "status": 400,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "errors": "[{\"objectName\":\"body\",\"fieldName\":\"id\",\"fieldValue\":\"123\",\"errorMessage\":\"does not match pathId: 11\"},{\"objectName\":\"owner\",\"fieldName\":\"telephone\",\"fieldValue\":\"example-string\",\"errorMessage\":\"numeric value out of bounds (<10 digits>.<0 digits> expected)\"}]",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Tue, 10 Jun 2025 10:17:54 GMT",
+    "Connection": "close"
+  }
+}
+--- Request 7 ---
+{
+  "method": "GET",
+  "url": "/api/pettypes/2",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 7 ---
+{
+  "status": 200,
+  "body": "{\"id\":2,\"name\":\"dog\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:54 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 8 ---
+{
+  "method": "GET",
+  "url": "/api/visits",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 8 ---
+{
+  "status": 200,
+  "body": "[{\"id\":1,\"date\":\"2010/03/04\",\"description\":\"rabies shot\",\"pet\":{\"id\":7,\"name\":\"Samantha\",\"birthDate\":\"1995/09/04\",\"type\":{\"id\":1,\"name\":\"cat\"},\"owner\":{\"id\":6,\"firstName\":\"Jean\",\"lastName\":\"Coleman\",\"address\":\"105 N. Lake St.\",\"city\":\"Monona\",\"telephone\":\"6085552654\"}}},{\"id\":2,\"date\":\"2011/03/04\",\"description\":\"rabies shot\",\"pet\":{\"id\":8,\"name\":\"Max\",\"birthDate\":\"1995/09/04\",\"type\":{\"id\":1,\"name\":\"cat\"},\"owner\":{\"id\":6,\"firstName\":\"Jean\",\"lastName\":\"Coleman\",\"address\":\"105 N. Lake St.\",\"city\":\"Monona\",\"telephone\":\"6085552654\"}}},{\"id\":3,\"date\":\"2009/06/04\",\"description\":\"neutered\",\"pet\":{\"id\":8,\"name\":\"Max\",\"birthDate\":\"1995/09/04\",\"type\":{\"id\":1,\"name\":\"cat\"},\"owner\":{\"id\":6,\"firstName\":\"Jean\",\"lastName\":\"Coleman\",\"address\":\"105 N. Lake St.\",\"city\":\"Monona\",\"telephone\":\"6085552654\"}}},{\"id\":4,\"date\":\"2008/09/04\",\"description\":\"spayed\",\"pet\":{\"id\":7,\"name\":\"Samantha\",\"birthDate\":\"1995/09/04\",\"type\":{\"id\":1,\"name\":\"cat\"},\"owner\":{\"id\":6,\"firstName\":\"Jean\",\"lastName\":\"Coleman\",\"address\":\"105 N. Lake St.\",\"city\":\"Monona\",\"telephone\":\"6085552654\"}}}]",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:54 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 9 ---
+{
+  "method": "GET",
+  "url": "/api/owners/*/lastname/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 9 ---
+{
+  "status": 404,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Tue, 10 Jun 2025 10:17:54 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 10 ---
+{
+  "method": "PUT",
+  "url": "/api/specialties/1",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "id": 123,
+    "name": "example-string"
+  }
+}
+--- Response 10 ---
+{
+  "status": 204,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Date": "Tue, 10 Jun 2025 10:17:54 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+=============================
+
+=== Iteration 10 ===
+
+--- Request 1 ---
+{
+  "method": "POST",
+  "url": "/api/vets",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "firstName": "example-string",
+    "id": 123,
+    "lastName": "example-string",
+    "specialties": []
+  }
+}
+--- Response 1 ---
+{
+  "status": 201,
+  "body": "{\"id\":123,\"firstName\":\"example-string\",\"lastName\":\"example-string\",\"specialties\":[]}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Location": "http://localhost:8080/petclinic/api/vets/123",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:54 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 2 ---
+{
+  "method": "OPTIONS",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 2 ---
+{
+  "status": 200,
+  "body": "",
+  "headers": {
+    "Allow": "GET,HEAD,POST,PUT,PATCH,DELETE,OPTIONS",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Tue, 10 Jun 2025 10:17:54 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 3 ---
+{
+  "method": "GET",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 3 ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Tue, 10 Jun 2025 10:17:54 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 4 ---
+{
+  "method": "PUT",
+  "url": "/api/visits/2",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "date": "yyyy/MM/dd",
+    "description": "example-string",
+    "id": 123,
+    "pet": "value"
+  }
+}
+--- Response 4 ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Tue, 10 Jun 2025 10:17:54 GMT",
+    "Connection": "close"
+  }
+}
+--- Request 5 ---
+{
+  "method": "GET",
+  "url": "/api/specialties",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 5 ---
+{
+  "status": 200,
+  "body": "[{\"id\":3,\"name\":\"dentistry\"},{\"id\":1,\"name\":\"example-string\"},{\"id\":4,\"name\":\"example-string\"},{\"id\":2,\"name\":\"surgery\"}]",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:54 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 6 ---
+{
+  "method": "PUT",
+  "url": "/api/owners/11",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "address": "example-string",
+    "city": "example-string",
+    "firstName": "example-string",
+    "id": 123,
+    "lastName": "example-string",
+    "pets": [],
+    "telephone": "example-string"
+  }
+}
+--- Response 6 ---
+{
+  "status": 400,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "errors": "[{\"objectName\":\"body\",\"fieldName\":\"id\",\"fieldValue\":\"123\",\"errorMessage\":\"does not match pathId: 11\"},{\"objectName\":\"owner\",\"fieldName\":\"telephone\",\"fieldValue\":\"example-string\",\"errorMessage\":\"numeric value out of bounds (<10 digits>.<0 digits> expected)\"}]",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Tue, 10 Jun 2025 10:17:54 GMT",
+    "Connection": "close"
+  }
+}
+--- Request 7 ---
+{
+  "method": "GET",
+  "url": "/api/pettypes/2",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 7 ---
+{
+  "status": 200,
+  "body": "{\"id\":2,\"name\":\"dog\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:54 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 8 ---
+{
+  "method": "GET",
+  "url": "/api/visits",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 8 ---
+{
+  "status": 200,
+  "body": "[{\"id\":1,\"date\":\"2010/03/04\",\"description\":\"rabies shot\",\"pet\":{\"id\":7,\"name\":\"Samantha\",\"birthDate\":\"1995/09/04\",\"type\":{\"id\":1,\"name\":\"cat\"},\"owner\":{\"id\":6,\"firstName\":\"Jean\",\"lastName\":\"Coleman\",\"address\":\"105 N. Lake St.\",\"city\":\"Monona\",\"telephone\":\"6085552654\"}}},{\"id\":2,\"date\":\"2011/03/04\",\"description\":\"rabies shot\",\"pet\":{\"id\":8,\"name\":\"Max\",\"birthDate\":\"1995/09/04\",\"type\":{\"id\":1,\"name\":\"cat\"},\"owner\":{\"id\":6,\"firstName\":\"Jean\",\"lastName\":\"Coleman\",\"address\":\"105 N. Lake St.\",\"city\":\"Monona\",\"telephone\":\"6085552654\"}}},{\"id\":3,\"date\":\"2009/06/04\",\"description\":\"neutered\",\"pet\":{\"id\":8,\"name\":\"Max\",\"birthDate\":\"1995/09/04\",\"type\":{\"id\":1,\"name\":\"cat\"},\"owner\":{\"id\":6,\"firstName\":\"Jean\",\"lastName\":\"Coleman\",\"address\":\"105 N. Lake St.\",\"city\":\"Monona\",\"telephone\":\"6085552654\"}}},{\"id\":4,\"date\":\"2008/09/04\",\"description\":\"spayed\",\"pet\":{\"id\":7,\"name\":\"Samantha\",\"birthDate\":\"1995/09/04\",\"type\":{\"id\":1,\"name\":\"cat\"},\"owner\":{\"id\":6,\"firstName\":\"Jean\",\"lastName\":\"Coleman\",\"address\":\"105 N. Lake St.\",\"city\":\"Monona\",\"telephone\":\"6085552654\"}}}]",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 10 Jun 2025 10:17:54 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 9 ---
+{
+  "method": "GET",
+  "url": "/api/owners/*/lastname/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 9 ---
+{
+  "status": 404,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Tue, 10 Jun 2025 10:17:54 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 10 ---
+{
+  "method": "PUT",
+  "url": "/api/specialties/1",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "id": 123,
+    "name": "example-string"
+  }
+}
+--- Response 10 ---
+{
+  "status": 204,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Date": "Tue, 10 Jun 2025 10:17:54 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+--- Request 11 ---
+{
+  "method": "PUT",
+  "url": "/api/visits/1",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "date": "yyyy/MM/dd",
+    "description": "example-string",
+    "id": 123,
+    "pet": "value"
+  }
+}
+--- Response 11 ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Tue, 10 Jun 2025 10:17:54 GMT",
+    "Connection": "close"
+  }
+}
+=============================

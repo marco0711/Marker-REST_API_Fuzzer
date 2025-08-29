@@ -1,0 +1,268 @@
+
+=== Seed 1 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/bessj/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 0,
+  "body": "Error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+  "headers": {}
+}
+=============================
+
+=== Seed 2 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 0,
+  "body": "Error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+  "headers": {}
+}
+=============================
+
+=== Seed 3 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/gammq/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 0,
+  "body": "Error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+  "headers": {}
+}
+=============================
+
+=== Iteration 1 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/triangle/example-string/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 0,
+  "body": "Error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+  "headers": {}
+}
+=============================
+
+=== Iteration 2 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/remainder/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:14:36.874+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/remainder/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:14:36 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 3 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/example-string/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:14:37.129+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/fisher/example-string/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:14:36 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 4 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/gammq/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:14:37.369+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Double'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/gammq/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:14:36 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 5 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/gammq/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:14:37.589+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Double'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/gammq/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:14:36 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 6 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/gammq/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:14:37.805+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Double'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/gammq/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:14:36 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 7 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/remainder/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:14:38.026+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/remainder/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:14:38 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 8 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/triangle/example-string/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:14:38.244+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/triangle/example-string/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:14:38 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 9 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/example-string/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:14:38.460+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/fisher/example-string/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:14:38 GMT",
+    "Connection": "close"
+  }
+}
+=============================

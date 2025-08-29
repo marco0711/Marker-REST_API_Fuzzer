@@ -1,0 +1,3769 @@
+
+=== Seed 1 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/bessj/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":0.09731467374277103}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:33 GMT"
+  }
+}
+=============================
+
+=== Seed 2 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:33 GMT"
+  }
+}
+=============================
+
+=== Seed 3 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/gammq/123.45/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "a",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":0.48803114912974976}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:33 GMT"
+  }
+}
+=============================
+
+=== Iteration 1 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/triangle/123/123/123",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "First edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "Second edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "c",
+      "in": "path",
+      "description": "Third edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":3,\"resultAsDouble\":null}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:33 GMT"
+  }
+}
+=============================
+
+=== Iteration 2 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/remainder/123/123",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "a",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "b",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":0,\"resultAsDouble\":null}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:33 GMT"
+  }
+}
+=============================
+
+=== Iteration 3 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/123/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "m",
+      "in": "path",
+      "description": "m",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":1.0}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:33 GMT"
+  }
+}
+=============================
+
+=== Iteration 4 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/triangle/123/123/123",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "First edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "Second edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "c",
+      "in": "path",
+      "description": "Third edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":3,\"resultAsDouble\":null}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:33 GMT"
+  }
+}
+=============================
+
+=== Iteration 5 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:33 GMT"
+  }
+}
+=============================
+
+=== Iteration 6 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:34 GMT"
+  }
+}
+=============================
+
+=== Iteration 7 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/remainder/123/123",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "a",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "b",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":0,\"resultAsDouble\":null}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:34 GMT"
+  }
+}
+=============================
+
+=== Iteration 8 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:34 GMT"
+  }
+}
+=============================
+
+=== Iteration 9 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:34 GMT"
+  }
+}
+=============================
+
+=== Iteration 10 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:34 GMT"
+  }
+}
+=============================
+
+=== Iteration 11 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:35 GMT"
+  }
+}
+=============================
+
+=== Iteration 12 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:35 GMT"
+  }
+}
+=============================
+
+=== Iteration 13 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:35 GMT"
+  }
+}
+=============================
+
+=== Iteration 14 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/triangle/123/123/123",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "First edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "Second edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "c",
+      "in": "path",
+      "description": "Third edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":3,\"resultAsDouble\":null}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:35 GMT"
+  }
+}
+=============================
+
+=== Iteration 15 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/remainder/123/123",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "a",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "b",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":0,\"resultAsDouble\":null}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:35 GMT"
+  }
+}
+=============================
+
+=== Iteration 16 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:36 GMT"
+  }
+}
+=============================
+
+=== Iteration 17 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:36 GMT"
+  }
+}
+=============================
+
+=== Iteration 18 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:36 GMT"
+  }
+}
+=============================
+
+=== Iteration 19 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:36 GMT"
+  }
+}
+=============================
+
+=== Iteration 20 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:36 GMT"
+  }
+}
+=============================
+
+=== Iteration 21 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/triangle/123/123/123",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "First edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "Second edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "c",
+      "in": "path",
+      "description": "Third edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":3,\"resultAsDouble\":null}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:37 GMT"
+  }
+}
+=============================
+
+=== Iteration 22 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:37 GMT"
+  }
+}
+=============================
+
+=== Iteration 23 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/triangle/123/123/123",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "First edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "Second edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "c",
+      "in": "path",
+      "description": "Third edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":3,\"resultAsDouble\":null}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:37 GMT"
+  }
+}
+=============================
+
+=== Iteration 24 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/triangle/123/123/123",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "First edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "Second edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "c",
+      "in": "path",
+      "description": "Third edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":3,\"resultAsDouble\":null}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:37 GMT"
+  }
+}
+=============================
+
+=== Iteration 25 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/triangle/123/123/123",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "First edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "Second edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "c",
+      "in": "path",
+      "description": "Third edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":3,\"resultAsDouble\":null}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:37 GMT"
+  }
+}
+=============================
+
+=== Iteration 26 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/triangle/123/123/123",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "First edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "Second edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "c",
+      "in": "path",
+      "description": "Third edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":3,\"resultAsDouble\":null}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:38 GMT"
+  }
+}
+=============================
+
+=== Iteration 27 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/triangle/123/123/123",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "First edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "Second edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "c",
+      "in": "path",
+      "description": "Third edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":3,\"resultAsDouble\":null}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:38 GMT"
+  }
+}
+=============================
+
+=== Iteration 28 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/remainder/123/123",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "a",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "b",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":0,\"resultAsDouble\":null}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:38 GMT"
+  }
+}
+=============================
+
+=== Iteration 29 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:38 GMT"
+  }
+}
+=============================
+
+=== Iteration 30 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/triangle/123/123/123",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "First edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "Second edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "c",
+      "in": "path",
+      "description": "Third edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":3,\"resultAsDouble\":null}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:38 GMT"
+  }
+}
+=============================
+
+=== Iteration 31 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:39 GMT"
+  }
+}
+=============================
+
+=== Iteration 32 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:39 GMT"
+  }
+}
+=============================
+
+=== Iteration 33 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:39 GMT"
+  }
+}
+=============================
+
+=== Iteration 34 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:39 GMT"
+  }
+}
+=============================
+
+=== Iteration 35 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:39 GMT"
+  }
+}
+=============================
+
+=== Iteration 36 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:40 GMT"
+  }
+}
+=============================
+
+=== Iteration 37 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/gammq/123.45/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "a",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":0.48803114912974976}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:40 GMT"
+  }
+}
+=============================
+
+=== Iteration 38 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/triangle/123/123/123",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "First edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "Second edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "c",
+      "in": "path",
+      "description": "Third edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":3,\"resultAsDouble\":null}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:40 GMT"
+  }
+}
+=============================
+
+=== Iteration 39 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:40 GMT"
+  }
+}
+=============================
+
+=== Iteration 40 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:40 GMT"
+  }
+}
+=============================
+
+=== Iteration 41 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/remainder/123/123",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "a",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "b",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":0,\"resultAsDouble\":null}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:41 GMT"
+  }
+}
+=============================
+
+=== Iteration 42 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:41 GMT"
+  }
+}
+=============================
+
+=== Iteration 43 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:41 GMT"
+  }
+}
+=============================
+
+=== Iteration 44 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:41 GMT"
+  }
+}
+=============================
+
+=== Iteration 45 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/triangle/123/123/123",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "First edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "Second edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "c",
+      "in": "path",
+      "description": "Third edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":3,\"resultAsDouble\":null}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:41 GMT"
+  }
+}
+=============================
+
+=== Iteration 46 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:43 GMT"
+  }
+}
+=============================
+
+=== Iteration 47 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:43 GMT"
+  }
+}
+=============================
+
+=== Iteration 48 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:43 GMT"
+  }
+}
+=============================
+
+=== Iteration 49 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:43 GMT"
+  }
+}
+=============================
+
+=== Iteration 50 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/triangle/123/123/123",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "First edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "Second edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "c",
+      "in": "path",
+      "description": "Third edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":3,\"resultAsDouble\":null}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:43 GMT"
+  }
+}
+=============================
+
+=== Iteration 51 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:44 GMT"
+  }
+}
+=============================
+
+=== Iteration 52 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:44 GMT"
+  }
+}
+=============================
+
+=== Iteration 53 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/triangle/123/123/123",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "First edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "Second edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "c",
+      "in": "path",
+      "description": "Third edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":3,\"resultAsDouble\":null}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:44 GMT"
+  }
+}
+=============================
+
+=== Iteration 54 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/triangle/123/123/123",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "First edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "Second edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "c",
+      "in": "path",
+      "description": "Third edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":3,\"resultAsDouble\":null}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:44 GMT"
+  }
+}
+=============================
+
+=== Iteration 55 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:44 GMT"
+  }
+}
+=============================
+
+=== Iteration 56 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:45 GMT"
+  }
+}
+=============================
+
+=== Iteration 57 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/triangle/123/123/123",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "First edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "Second edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "c",
+      "in": "path",
+      "description": "Third edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":3,\"resultAsDouble\":null}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:45 GMT"
+  }
+}
+=============================
+
+=== Iteration 58 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:45 GMT"
+  }
+}
+=============================
+
+=== Iteration 59 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/gammq/123.45/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "a",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":0.48803114912974976}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:45 GMT"
+  }
+}
+=============================
+
+=== Iteration 60 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/gammq/123.45/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "a",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":0.48803114912974976}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:45 GMT"
+  }
+}
+=============================
+
+=== Iteration 61 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:46 GMT"
+  }
+}
+=============================
+
+=== Iteration 62 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:46 GMT"
+  }
+}
+=============================
+
+=== Iteration 63 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:46 GMT"
+  }
+}
+=============================
+
+=== Iteration 64 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/triangle/123/123/123",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "First edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "Second edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "c",
+      "in": "path",
+      "description": "Third edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":3,\"resultAsDouble\":null}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:46 GMT"
+  }
+}
+=============================
+
+=== Iteration 65 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:46 GMT"
+  }
+}
+=============================
+
+=== Iteration 66 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:47 GMT"
+  }
+}
+=============================
+
+=== Iteration 67 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:47 GMT"
+  }
+}
+=============================
+
+=== Iteration 68 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/triangle/123/123/123",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "First edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "Second edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "c",
+      "in": "path",
+      "description": "Third edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":3,\"resultAsDouble\":null}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:47 GMT"
+  }
+}
+=============================
+
+=== Iteration 69 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/triangle/123/123/123",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "First edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "Second edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "c",
+      "in": "path",
+      "description": "Third edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":3,\"resultAsDouble\":null}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:47 GMT"
+  }
+}
+=============================
+
+=== Iteration 70 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:47 GMT"
+  }
+}
+=============================
+
+=== Iteration 71 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:48 GMT"
+  }
+}
+=============================
+
+=== Iteration 72 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:48 GMT"
+  }
+}
+=============================
+
+=== Iteration 73 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:48 GMT"
+  }
+}
+=============================
+
+=== Iteration 74 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:48 GMT"
+  }
+}
+=============================
+
+=== Iteration 75 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/triangle/123/123/123",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "First edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "Second edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "c",
+      "in": "path",
+      "description": "Third edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":3,\"resultAsDouble\":null}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:48 GMT"
+  }
+}
+=============================
+
+=== Iteration 76 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:49 GMT"
+  }
+}
+=============================
+
+=== Iteration 77 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/triangle/123/123/123",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "First edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "Second edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "c",
+      "in": "path",
+      "description": "Third edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":3,\"resultAsDouble\":null}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:49 GMT"
+  }
+}
+=============================
+
+=== Iteration 78 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:49 GMT"
+  }
+}
+=============================
+
+=== Iteration 79 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:49 GMT"
+  }
+}
+=============================
+
+=== Iteration 80 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:49 GMT"
+  }
+}
+=============================
+
+=== Iteration 81 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/triangle/123/123/123",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "First edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "Second edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "c",
+      "in": "path",
+      "description": "Third edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":3,\"resultAsDouble\":null}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:50 GMT"
+  }
+}
+=============================
+
+=== Iteration 82 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:50 GMT"
+  }
+}
+=============================
+
+=== Iteration 83 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/123/123.45",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 200,
+  "body": "{\"resultAsInt\":null,\"resultAsDouble\":9.896786349944093E-57}",
+  "headers": {
+    "Content-Disposition": "inline;filename=f.txt",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:54:50 GMT"
+  }
+}
+=============================

@@ -1,0 +1,57 @@
+
+=== Seed 1 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/bessj/n/x",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 0,
+  "body": "Error: HTTPConnectionPool(host='localhost', port=8080): Max retries exceeded with url: /api/bessj/n/x (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff08790b070>: Failed to establish a new connection: [Errno 111] Connection refused'))",
+  "headers": {}
+}
+=============================
+
+=== Seed 2 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/n/x",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 0,
+  "body": "Error: HTTPConnectionPool(host='localhost', port=8080): Max retries exceeded with url: /api/expint/n/x (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff08789c250>: Failed to establish a new connection: [Errno 111] Connection refused'))",
+  "headers": {}
+}
+=============================
+
+=== Seed 3 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/gammq/a/x",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 0,
+  "body": "Error: HTTPConnectionPool(host='localhost', port=8080): Max retries exceeded with url: /api/gammq/a/x (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff08790b970>: Failed to establish a new connection: [Errno 111] Connection refused'))",
+  "headers": {}
+}
+=============================

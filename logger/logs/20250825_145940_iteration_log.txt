@@ -1,0 +1,2112 @@
+
+=== Seed 1 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/bessj/{n}/{x}",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:40.082+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/bessj/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:40 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Seed 2 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/{n}/{x}",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:40.103+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/expint/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:40 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Seed 3 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/gammq/{a}/{x}",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:40.110+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Double'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/gammq/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:40 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 1 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:40.119+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:40 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 2 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/remainder/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:40.333+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/remainder/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:40 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 3 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Double'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:40.554+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Double'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Double';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:40 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 4 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/triangle/example-string/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:40.773+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/triangle/example-string/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:40 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 5 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Double'\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:40.991+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Double'%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:40 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 6 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:41.219+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:41 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 7 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:41.446+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:41 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 8 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:41.660+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:41 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 9 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:41.884+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:41 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 10 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:42.099+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:41 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 11 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:42.315+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:42 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 12 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:42.530+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:42 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 13 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Double'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:42.746+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Double'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Double';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:42 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 14 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:42.970+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:42 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 15 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Double'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:43.185+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Double'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Double';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:42 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 16 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:43.400+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:43 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 17 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:43.615+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:43 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 18 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:43.829+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:43 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 19 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:44.044+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:43 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 20 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/bessj/{n}/{x}",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:44.257+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"{n}\\\"\",\"path\":\"/api/bessj/%7Bn%7D/%7Bx%7D\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:43 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 21 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:44.470+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:44 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 22 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:44.684+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:44 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 23 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:44.898+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:44 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 24 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:45.113+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:44 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 25 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/gammq/{a}/{x}",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:45.328+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Double'; nested exception is java.lang.NumberFormatException: For input string: \\\"{a}\\\"\",\"path\":\"/api/gammq/%7Ba%7D/%7Bx%7D\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:44 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 26 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/{n}/{x}",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:45.541+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"{n}\\\"\",\"path\":\"/api/expint/%7Bn%7D/%7Bx%7D\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:45 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 27 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:45.756+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:45 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 28 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/gammq/{a}/{x}",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:45.969+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Double'; nested exception is java.lang.NumberFormatException: For input string: \\\"{a}\\\"\",\"path\":\"/api/gammq/%7Ba%7D/%7Bx%7D\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:45 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 29 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:46.182+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:45 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 30 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:46.396+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:45 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 31 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:46.610+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:46 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 32 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:46.824+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:46 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 33 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/{n}/{x}",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:47.038+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"{n}\\\"\",\"path\":\"/api/expint/%7Bn%7D/%7Bx%7D\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:46 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 34 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/remainder/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:47.251+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/remainder/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:46 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 35 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/{n}/{x}",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:47.463+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"{n}\\\"\",\"path\":\"/api/expint/%7Bn%7D/%7Bx%7D\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:46 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 36 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/gammq/{a}/{x}",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:47.676+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Double'; nested exception is java.lang.NumberFormatException: For input string: \\\"{a}\\\"\",\"path\":\"/api/gammq/%7Ba%7D/%7Bx%7D\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:47 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 37 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:47.890+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:47 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 38 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/gammq/{a}/{x}",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:48.102+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Double'; nested exception is java.lang.NumberFormatException: For input string: \\\"{a}\\\"\",\"path\":\"/api/gammq/%7Ba%7D/%7Bx%7D\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:47 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 39 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:48.315+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:47 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 40 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/{n}/{x}",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:48.527+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"{n}\\\"\",\"path\":\"/api/expint/%7Bn%7D/%7Bx%7D\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:47 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 41 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:48.741+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:48 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 42 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Double'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:48.954+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Double'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Double';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:48 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 43 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:49.167+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:48 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 44 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Double'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:49.380+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Double'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Double';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:48 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 45 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:49.594+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:48 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 46 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:49.807+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:49 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 47 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/{n}/{x}",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:50.021+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"{n}\\\"\",\"path\":\"/api/expint/%7Bn%7D/%7Bx%7D\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:49 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 48 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:50.233+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:49 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 49 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:50.446+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:49 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 50 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:50.658+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:49 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 51 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/{n}/{x}",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:50.868+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"{n}\\\"\",\"path\":\"/api/expint/%7Bn%7D/%7Bx%7D\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:50 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 52 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/gammq/{a}/{x}",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:51.080+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Double'; nested exception is java.lang.NumberFormatException: For input string: \\\"{a}\\\"\",\"path\":\"/api/gammq/%7Ba%7D/%7Bx%7D\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:50 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 53 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Double'\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:51.293+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Double'%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:50 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 54 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:51.508+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:50 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 55 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:51.721+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:50 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 56 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/bessj/{n}/{x}",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:51.933+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"{n}\\\"\",\"path\":\"/api/bessj/%7Bn%7D/%7Bx%7D\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:51 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 57 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/triangle/example-string/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:52.147+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/triangle/example-string/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:51 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 58 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:52.362+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:51 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 59 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Double'\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:52.575+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Double'%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:51 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 60 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:52.789+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:51 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 61 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:53.003+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:53 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 62 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:53.217+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:53 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 63 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:53.429+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:53 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 64 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:53.640+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:53 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 65 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/{n}/{x}",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:53.851+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"{n}\\\"\",\"path\":\"/api/expint/%7Bn%7D/%7Bx%7D\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:53 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 66 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:54.063+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:54 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 67 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:54.276+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:54 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 68 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:54.488+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:54 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 69 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:54.700+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:54 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 70 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Double'\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:54.913+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Double'%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:54 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 71 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:55.124+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:55 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 72 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:55.336+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:55 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 73 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:55.549+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:55 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 74 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:55.761+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:55 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 75 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:55.972+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:55 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 76 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:56.184+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:56 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 77 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:56.397+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:56 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 78 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:56.611+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:56 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 79 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:56.827+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:56 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 80 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:57.040+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:56 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 81 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/{n}/{x}",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:57.252+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"{n}\\\"\",\"path\":\"/api/expint/%7Bn%7D/%7Bx%7D\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:57 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 82 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Double'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:57.463+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Double'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Double';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:57 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 83 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/{n}/{x}",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:57.674+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"{n}\\\"\",\"path\":\"/api/expint/%7Bn%7D/%7Bx%7D\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:57 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 84 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:57.887+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:57 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 85 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"example-string\"/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T12:59:58.100+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"Failedtoconvertvalueoftype'java.lang.String'torequiredtype'java.lang.Integer'\\\"\",\"path\":\"/api/fisher/Failed%20to%20convert%20value%20of%20type%20'java.lang.String'%20to%20required%20type%20'java.lang.Integer';%20nested%20exception%20is%20java.lang.NumberFormatException:%20For%20input%20string:%20%22example-string%22/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 12:59:57 GMT",
+    "Connection": "close"
+  }
+}
+=============================

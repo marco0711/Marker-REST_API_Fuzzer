@@ -1,0 +1,78 @@
+
+=== Seed 1 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/bessj/n/x",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 404,
+  "body": "<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 \u2013 Not Found</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 \u2013 Not Found</h1></body></html>",
+  "headers": {
+    "Content-Type": "text/html;charset=utf-8",
+    "Content-Language": "en",
+    "Content-Length": "431",
+    "Date": "Thu, 21 Aug 2025 10:40:18 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+=============================
+
+=== Seed 2 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/n/x",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 404,
+  "body": "<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 \u2013 Not Found</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 \u2013 Not Found</h1></body></html>",
+  "headers": {
+    "Content-Type": "text/html;charset=utf-8",
+    "Content-Language": "en",
+    "Content-Length": "431",
+    "Date": "Thu, 21 Aug 2025 10:40:18 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+=============================
+
+=== Seed 3 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/gammq/a/x",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response 1 ---
+{
+  "status": 404,
+  "body": "<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 \u2013 Not Found</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 \u2013 Not Found</h1></body></html>",
+  "headers": {
+    "Content-Type": "text/html;charset=utf-8",
+    "Content-Language": "en",
+    "Content-Length": "431",
+    "Date": "Thu, 21 Aug 2025 10:40:18 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+=============================

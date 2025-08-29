@@ -1,0 +1,1040 @@
+
+=== Seed 1 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/bessj/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:30:22.430+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/bessj/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:30:22 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Seed 2 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:30:22.435+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/expint/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:30:22 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Seed 3 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/gammq/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "a",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:30:22.440+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Double'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/gammq/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:30:22 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 1 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/remainder/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "a",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "b",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:30:22.446+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/remainder/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:30:22 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 2 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/example-string/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "m",
+      "in": "path",
+      "description": "m",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:30:22.659+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/fisher/example-string/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:30:22 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 3 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/triangle/example-string/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "First edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "Second edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "c",
+      "in": "path",
+      "description": "Third edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:30:22.877+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/triangle/example-string/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:30:22 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 4 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/bessj/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:30:23.097+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/bessj/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:30:22 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 5 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/fisher/example-string/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "m",
+      "in": "path",
+      "description": "m",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:30:23.310+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/fisher/example-string/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:30:22 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 6 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/remainder/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "a",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "b",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:30:23.522+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/remainder/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:30:23 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 7 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/remainder/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "a",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "b",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:30:23.735+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/remainder/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:30:23 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 8 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:30:23.948+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/expint/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:30:23 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 9 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/triangle/example-string/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "First edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "Second edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "c",
+      "in": "path",
+      "description": "Third edge",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:30:24.162+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/triangle/example-string/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:30:23 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 10 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/remainder/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "a",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "b",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:30:24.374+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/remainder/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:30:23 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 11 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/gammq/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "a",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:30:24.586+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Double'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/gammq/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:30:24 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 12 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/bessj/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:30:24.798+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/bessj/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:30:24 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 13 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/bessj/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:30:25.010+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/bessj/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:30:24 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 14 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/gammq/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "a",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:30:25.223+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Double'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/gammq/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:30:24 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 15 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/bessj/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:30:25.439+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/bessj/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:30:24 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 16 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/expint/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:30:25.651+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/expint/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:30:25 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 17 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/gammq/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "a",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:30:25.863+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Double'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/gammq/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:30:25 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 18 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/gammq/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "a",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:30:26.077+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Double'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/gammq/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:30:25 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 19 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/gammq/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "a",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:30:26.290+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Double'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/gammq/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:30:25 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 20 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/bessj/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "n",
+      "in": "path",
+      "description": "n",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "x",
+      "in": "path",
+      "description": "x",
+      "required": true,
+      "type": "number",
+      "format": "double"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:30:26.503+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/bessj/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:30:25 GMT",
+    "Connection": "close"
+  }
+}
+=============================
+
+=== Iteration 21 ===
+
+--- Request 1 ---
+{
+  "method": "GET",
+  "url": "/api/remainder/example-string/example-string",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null,
+  "parameters": [
+    {
+      "name": "a",
+      "in": "path",
+      "description": "a",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    {
+      "name": "b",
+      "in": "path",
+      "description": "b",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+    }
+  ]
+}
+--- Response 1 ---
+{
+  "status": 400,
+  "body": "{\"timestamp\":\"2025-08-25T18:30:26.719+0000\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \\\"example-string\\\"\",\"path\":\"/api/remainder/example-string/example-string\"}",
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Mon, 25 Aug 2025 18:30:26 GMT",
+    "Connection": "close"
+  }
+}
+=============================
