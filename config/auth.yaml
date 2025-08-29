@@ -1,0 +1,6 @@
+auth_type:   
+login_url: 
+
+credentials:
+  username: admin 
+  password: admin

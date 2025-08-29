@@ -1,0 +1,3995 @@
+
+=== STATUS CODE (61) ===
+
+Reason: ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/owners",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "telephone": "example-string"
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Sat, 05 Jul 2025 18:53:42 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/pets",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "name": "example-string"
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Sat, 05 Jul 2025 18:53:42 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/pettypes",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "id": 123
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "errors": "[{\"objectName\":\"petType\",\"fieldName\":\"name\",\"fieldValue\":\"null\",\"errorMessage\":\"must not be empty\"}]",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Sat, 05 Jul 2025 18:53:42 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/users",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "password": "example-string"
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.Exception\",\"exMessage\":\"User must have at least a role set!\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "85",
+    "Date": "Sat, 05 Jul 2025 18:53:43 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/vets",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "lastName": "example-string"
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "errors": "[{\"objectName\":\"vet\",\"fieldName\":\"firstName\",\"fieldValue\":\"null\",\"errorMessage\":\"must not be empty\"}]",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Sat, 05 Jul 2025 18:53:43 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/visits",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "date": "yyyy/MM/dd"
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Sat, 05 Jul 2025 18:53:43 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "GET",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:53:43.980+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:53:43 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "HEAD",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:53:43 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "POST",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:53:43.992+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:53:43 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "PUT",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:53:43.997+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:53:43 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "DELETE",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:53:44.005+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:53:43 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "PATCH",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:53:44.013+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:53:43 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "HEAD",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:53:43 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "PUT",
+  "url": "/api/specialties/4",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"org.springframework.http.converter.HttpMessageNotReadableException\",\"exMessage\":\"Required request body is missing: public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Specialty> org.springframework.samples.petclinic.rest.SpecialtyRestController.updateSpecialty(int,org.springframework.samples.petclinic.model.Specialty,org.springframework.validation.BindingResult)\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "419",
+    "Date": "Sat, 05 Jul 2025 18:53:43 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/owners",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "firstName": "example-string",
+    "city": "example-string"
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Sat, 05 Jul 2025 18:53:45 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "GET",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:53:53.009+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:53:52 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "HEAD",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:53:53 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "GET",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:53:57.418+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:53:56 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "GET",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:54:02.061+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:54:01 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "GET",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:54:03.109+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:54:02 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "GET",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:54:03.325+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:54:03 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "PUT",
+  "url": "/api/owners/21",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"org.springframework.http.converter.HttpMessageNotReadableException\",\"exMessage\":\"Required request body is missing: public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Owner> org.springframework.samples.petclinic.rest.OwnerRestController.updateOwner(int,org.springframework.samples.petclinic.model.Owner,org.springframework.validation.BindingResult,org.springframework.web.util.UriComponentsBuilder)\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "453",
+    "Date": "Sat, 05 Jul 2025 18:54:05 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "HEAD",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:54:11 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "HEAD",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:54:17 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "POST",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:54:18.044+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:54:18 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "HEAD",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:54:21 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "POST",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:54:23.840+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:54:23 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "POST",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:54:24.057+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:54:23 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "PUT",
+  "url": "/api/pets/40",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"org.springframework.http.converter.HttpMessageNotReadableException\",\"exMessage\":\"Required request body is missing: public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Pet> org.springframework.samples.petclinic.rest.PetRestController.updatePet(int,org.springframework.samples.petclinic.model.Pet,org.springframework.validation.BindingResult)\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "395",
+    "Date": "Sat, 05 Jul 2025 18:54:24 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "GET",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:54:27.657+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:54:27 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/pettypes",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "id": 123
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "errors": "[{\"objectName\":\"petType\",\"fieldName\":\"name\",\"fieldValue\":\"null\",\"errorMessage\":\"must not be empty\"}]",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Sat, 05 Jul 2025 18:54:27 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "POST",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:54:29.903+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:54:29 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "PUT",
+  "url": "/api/owners/79",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"org.springframework.http.converter.HttpMessageNotReadableException\",\"exMessage\":\"Required request body is missing: public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Owner> org.springframework.samples.petclinic.rest.OwnerRestController.updateOwner(int,org.springframework.samples.petclinic.model.Owner,org.springframework.validation.BindingResult,org.springframework.web.util.UriComponentsBuilder)\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "453",
+    "Date": "Sat, 05 Jul 2025 18:54:31 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/owners",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "firstName": "example-string"
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Sat, 05 Jul 2025 18:54:32 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "PUT",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:54:38.505+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:54:38 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "PUT",
+  "url": "/api/pets/24",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"org.springframework.http.converter.HttpMessageNotReadableException\",\"exMessage\":\"Required request body is missing: public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Pet> org.springframework.samples.petclinic.rest.PetRestController.updatePet(int,org.springframework.samples.petclinic.model.Pet,org.springframework.validation.BindingResult)\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "395",
+    "Date": "Sat, 05 Jul 2025 18:54:39 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/owners",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "telephone": "example-string"
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Sat, 05 Jul 2025 18:54:41 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/vets",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "lastName": "example-string"
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "errors": "[{\"objectName\":\"vet\",\"fieldName\":\"firstName\",\"fieldValue\":\"null\",\"errorMessage\":\"must not be empty\"}]",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Sat, 05 Jul 2025 18:54:46 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "PUT",
+  "url": "/api/pets/56",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"org.springframework.http.converter.HttpMessageNotReadableException\",\"exMessage\":\"Required request body is missing: public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Pet> org.springframework.samples.petclinic.rest.PetRestController.updatePet(int,org.springframework.samples.petclinic.model.Pet,org.springframework.validation.BindingResult)\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "395",
+    "Date": "Sat, 05 Jul 2025 18:54:51 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "PUT",
+  "url": "/api/specialties/6",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"org.springframework.http.converter.HttpMessageNotReadableException\",\"exMessage\":\"Required request body is missing: public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Specialty> org.springframework.samples.petclinic.rest.SpecialtyRestController.updateSpecialty(int,org.springframework.samples.petclinic.model.Specialty,org.springframework.validation.BindingResult)\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "419",
+    "Date": "Sat, 05 Jul 2025 18:54:53 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "PUT",
+  "url": "/api/pets/104",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"org.springframework.http.converter.HttpMessageNotReadableException\",\"exMessage\":\"Required request body is missing: public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Pet> org.springframework.samples.petclinic.rest.PetRestController.updatePet(int,org.springframework.samples.petclinic.model.Pet,org.springframework.validation.BindingResult)\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "395",
+    "Date": "Sat, 05 Jul 2025 18:54:55 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "PUT",
+  "url": "/api/specialties/39",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"org.springframework.http.converter.HttpMessageNotReadableException\",\"exMessage\":\"Required request body is missing: public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Specialty> org.springframework.samples.petclinic.rest.SpecialtyRestController.updateSpecialty(int,org.springframework.samples.petclinic.model.Specialty,org.springframework.validation.BindingResult)\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "419",
+    "Date": "Sat, 05 Jul 2025 18:54:58 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "PUT",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:55:13.710+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:55:13 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "HEAD",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:55:14 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/owners",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "lastName": "MyBikFlaMtVe0lIO88zw2eof9VGfJpPQ4gbeL9i3mnVa1ngDFX"
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Sat, 05 Jul 2025 18:55:16 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/owners",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "pets": [
+      {
+        "birthDate": "2025-01-01T00:00:00Z",
+        "id": 123,
+        "name": "example-string",
+        "owner": "fallback",
+        "type": {
+          "id": 123,
+          "name": "example-string"
+        },
+        "visits": [
+          {
+            "date": "yyyy/MM/dd",
+            "description": "example-string",
+            "id": 123,
+            "pet": "fallback"
+          }
+        ]
+      },
+      {
+        "birthDate": "2025-01-01T00:00:00Z",
+        "id": 123,
+        "name": "example-string",
+        "owner": "fallback",
+        "type": {
+          "id": 123,
+          "name": "example-string"
+        },
+        "visits": [
+          {
+            "date": "yyyy/MM/dd",
+            "description": "example-string",
+            "id": 123,
+            "pet": "fallback"
+          }
+        ]
+      }
+    ]
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Sat, 05 Jul 2025 18:55:19 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "HEAD",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:55:20 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "POST",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:55:21.986+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:55:21 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "GET",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:55:22.717+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:55:22 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "PUT",
+  "url": "/api/pets/134",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"org.springframework.http.converter.HttpMessageNotReadableException\",\"exMessage\":\"Required request body is missing: public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Pet> org.springframework.samples.petclinic.rest.PetRestController.updatePet(int,org.springframework.samples.petclinic.model.Pet,org.springframework.validation.BindingResult)\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "395",
+    "Date": "Sat, 05 Jul 2025 18:55:22 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/owners",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "telephone": "example-string"
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Sat, 05 Jul 2025 18:55:24 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "POST",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:55:24.998+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:55:24 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "HEAD",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:55:24 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "POST",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:55:29.519+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:55:28 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "PUT",
+  "url": "/api/pets/138",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"org.springframework.http.converter.HttpMessageNotReadableException\",\"exMessage\":\"Required request body is missing: public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Pet> org.springframework.samples.petclinic.rest.PetRestController.updatePet(int,org.springframework.samples.petclinic.model.Pet,org.springframework.validation.BindingResult)\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "395",
+    "Date": "Sat, 05 Jul 2025 18:55:32 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/owners",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "lastName": "example-string",
+    "telephone": "example-string"
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Sat, 05 Jul 2025 18:55:32 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "PUT",
+  "url": "/api/specialties/98",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"org.springframework.http.converter.HttpMessageNotReadableException\",\"exMessage\":\"Required request body is missing: public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Specialty> org.springframework.samples.petclinic.rest.SpecialtyRestController.updateSpecialty(int,org.springframework.samples.petclinic.model.Specialty,org.springframework.validation.BindingResult)\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "419",
+    "Date": "Sat, 05 Jul 2025 18:55:33 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "HEAD",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:55:34 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "PUT",
+  "url": "/api/vets/9",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"org.springframework.http.converter.HttpMessageNotReadableException\",\"exMessage\":\"Required request body is missing: public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Vet> org.springframework.samples.petclinic.rest.VetRestController.updateVet(int,org.springframework.samples.petclinic.model.Vet,org.springframework.validation.BindingResult)\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "395",
+    "Date": "Sat, 05 Jul 2025 18:55:35 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/vets",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "firstName": "example-string"
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "errors": "[{\"objectName\":\"vet\",\"fieldName\":\"lastName\",\"fieldValue\":\"null\",\"errorMessage\":\"must not be empty\"}]",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Sat, 05 Jul 2025 18:55:37 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: ❗ Undeclared status code: 500
+--- Request ---
+{
+  "method": "HEAD",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:55:41 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+=== SERVER ERROR (32) ===
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "GET",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:53:43.980+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:53:43 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "HEAD",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:53:43 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "POST",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:53:43.992+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:53:43 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "PUT",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:53:43.997+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:53:43 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "DELETE",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:53:44.005+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:53:43 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "PATCH",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:53:44.013+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:53:43 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "HEAD",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:53:43 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "GET",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:53:53.009+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:53:52 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "HEAD",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:53:53 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "GET",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:53:57.418+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:53:56 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "GET",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:54:02.061+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:54:01 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "GET",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:54:03.109+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:54:02 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "GET",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:54:03.325+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:54:03 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "HEAD",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:54:11 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "HEAD",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:54:17 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "POST",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:54:18.044+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:54:18 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "HEAD",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:54:21 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "POST",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:54:23.840+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:54:23 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "POST",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:54:24.057+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:54:23 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "GET",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:54:27.657+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:54:27 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "POST",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:54:29.903+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:54:29 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "PUT",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:54:38.505+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:54:38 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "PUT",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:55:13.710+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:55:13 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "HEAD",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:55:14 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "HEAD",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:55:20 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "POST",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:55:21.986+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:55:21 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "GET",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:55:22.717+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:55:22 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "POST",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:55:24.998+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:55:24 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "HEAD",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:55:24 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "POST",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-07-05T18:55:29.519+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:55:28 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "HEAD",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:55:34 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 🔥 Server error
+--- Request ---
+{
+  "method": "HEAD",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Sat, 05 Jul 2025 18:55:41 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+=== STACK TRACE (11) ===
+
+Reason: 💥 Stack trace or crash pattern detected
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/owners",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "telephone": "example-string"
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Sat, 05 Jul 2025 18:53:42 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 💥 Stack trace or crash pattern detected
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/pets",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "name": "example-string"
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Sat, 05 Jul 2025 18:53:42 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 💥 Stack trace or crash pattern detected
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/users",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "password": "example-string"
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.Exception\",\"exMessage\":\"User must have at least a role set!\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "85",
+    "Date": "Sat, 05 Jul 2025 18:53:43 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 💥 Stack trace or crash pattern detected
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/visits",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "date": "yyyy/MM/dd"
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Sat, 05 Jul 2025 18:53:43 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 💥 Stack trace or crash pattern detected
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/owners",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "firstName": "example-string",
+    "city": "example-string"
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Sat, 05 Jul 2025 18:53:45 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 💥 Stack trace or crash pattern detected
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/owners",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "firstName": "example-string"
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Sat, 05 Jul 2025 18:54:32 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 💥 Stack trace or crash pattern detected
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/owners",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "telephone": "example-string"
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Sat, 05 Jul 2025 18:54:41 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 💥 Stack trace or crash pattern detected
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/owners",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "lastName": "MyBikFlaMtVe0lIO88zw2eof9VGfJpPQ4gbeL9i3mnVa1ngDFX"
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Sat, 05 Jul 2025 18:55:16 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 💥 Stack trace or crash pattern detected
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/owners",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "pets": [
+      {
+        "birthDate": "2025-01-01T00:00:00Z",
+        "id": 123,
+        "name": "example-string",
+        "owner": "fallback",
+        "type": {
+          "id": 123,
+          "name": "example-string"
+        },
+        "visits": [
+          {
+            "date": "yyyy/MM/dd",
+            "description": "example-string",
+            "id": 123,
+            "pet": "fallback"
+          }
+        ]
+      },
+      {
+        "birthDate": "2025-01-01T00:00:00Z",
+        "id": 123,
+        "name": "example-string",
+        "owner": "fallback",
+        "type": {
+          "id": 123,
+          "name": "example-string"
+        },
+        "visits": [
+          {
+            "date": "yyyy/MM/dd",
+            "description": "example-string",
+            "id": 123,
+            "pet": "fallback"
+          }
+        ]
+      }
+    ]
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Sat, 05 Jul 2025 18:55:19 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 💥 Stack trace or crash pattern detected
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/owners",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "telephone": "example-string"
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Sat, 05 Jul 2025 18:55:24 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+Reason: 💥 Stack trace or crash pattern detected
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/owners",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "lastName": "example-string",
+    "telephone": "example-string"
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Sat, 05 Jul 2025 18:55:32 GMT",
+    "Connection": "close"
+  }
+}
+-----------------------------
+
+=== INVALID CONTENT TYPE (25) ===
+
+Reason: 📦 Unexpected Content-Type: text/html
+--- Request ---
+{
+  "method": "GET",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Sat, 05 Jul 2025 18:53:42 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+-----------------------------
+
+Reason: 📦 Unexpected Content-Type: text/html
+--- Request ---
+{
+  "method": "HEAD",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 200,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Sat, 05 Jul 2025 18:53:42 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+-----------------------------
+
+Reason: 📦 Unexpected Content-Type: text/html
+--- Request ---
+{
+  "method": "POST",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Sat, 05 Jul 2025 18:53:42 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+-----------------------------
+
+Reason: 📦 Unexpected Content-Type: text/html
+--- Request ---
+{
+  "method": "PUT",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Sat, 05 Jul 2025 18:53:42 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+-----------------------------
+
+Reason: 📦 Unexpected Content-Type: text/html
+--- Request ---
+{
+  "method": "DELETE",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Sat, 05 Jul 2025 18:53:42 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+-----------------------------
+
+Reason: 📦 Unexpected Content-Type: 
+--- Request ---
+{
+  "method": "OPTIONS",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 200,
+  "body": "",
+  "headers": {
+    "Allow": "GET,HEAD,POST,PUT,PATCH,DELETE,OPTIONS",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Sat, 05 Jul 2025 18:53:42 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+-----------------------------
+
+Reason: 📦 Unexpected Content-Type: text/html
+--- Request ---
+{
+  "method": "PATCH",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Sat, 05 Jul 2025 18:53:42 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+-----------------------------
+
+Reason: 📦 Unexpected Content-Type: 
+--- Request ---
+{
+  "method": "OPTIONS",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 200,
+  "body": "",
+  "headers": {
+    "Allow": "GET,HEAD,POST,PUT,PATCH,DELETE,OPTIONS",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Sat, 05 Jul 2025 18:53:43 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+-----------------------------
+
+Reason: 📦 Unexpected Content-Type: 
+--- Request ---
+{
+  "method": "DELETE",
+  "url": "/api/specialties/9",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 204,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Date": "Sat, 05 Jul 2025 18:53:44 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+-----------------------------
+
+Reason: 📦 Unexpected Content-Type: text/html
+--- Request ---
+{
+  "method": "GET",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Sat, 05 Jul 2025 18:54:11 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+-----------------------------
+
+Reason: 📦 Unexpected Content-Type: text/html
+--- Request ---
+{
+  "method": "HEAD",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 200,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Sat, 05 Jul 2025 18:54:18 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+-----------------------------
+
+Reason: 📦 Unexpected Content-Type: text/html
+--- Request ---
+{
+  "method": "GET",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Sat, 05 Jul 2025 18:54:21 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+-----------------------------
+
+Reason: 📦 Unexpected Content-Type: text/html
+--- Request ---
+{
+  "method": "GET",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Sat, 05 Jul 2025 18:54:21 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+-----------------------------
+
+Reason: 📦 Unexpected Content-Type: text/html
+--- Request ---
+{
+  "method": "GET",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Sat, 05 Jul 2025 18:54:23 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+-----------------------------
+
+Reason: 📦 Unexpected Content-Type: 
+--- Request ---
+{
+  "method": "DELETE",
+  "url": "/api/specialties/137",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 204,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Date": "Sat, 05 Jul 2025 18:54:43 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+-----------------------------
+
+Reason: 📦 Unexpected Content-Type: text/html
+--- Request ---
+{
+  "method": "HEAD",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 200,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Sat, 05 Jul 2025 18:54:49 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+-----------------------------
+
+Reason: 📦 Unexpected Content-Type: 
+--- Request ---
+{
+  "method": "DELETE",
+  "url": "/api/specialties/79",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 204,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Date": "Sat, 05 Jul 2025 18:54:50 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+-----------------------------
+
+Reason: 📦 Unexpected Content-Type: text/html
+--- Request ---
+{
+  "method": "GET",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Sat, 05 Jul 2025 18:55:03 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+-----------------------------
+
+Reason: 📦 Unexpected Content-Type: text/html
+--- Request ---
+{
+  "method": "POST",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Sat, 05 Jul 2025 18:55:05 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+-----------------------------
+
+Reason: 📦 Unexpected Content-Type: text/html
+--- Request ---
+{
+  "method": "HEAD",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 200,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Sat, 05 Jul 2025 18:55:05 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+-----------------------------
+
+Reason: 📦 Unexpected Content-Type: text/html
+--- Request ---
+{
+  "method": "HEAD",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 200,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Sat, 05 Jul 2025 18:55:11 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+-----------------------------
+
+Reason: 📦 Unexpected Content-Type: text/html
+--- Request ---
+{
+  "method": "HEAD",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 200,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Sat, 05 Jul 2025 18:55:14 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+-----------------------------
+
+Reason: 📦 Unexpected Content-Type: 
+--- Request ---
+{
+  "method": "DELETE",
+  "url": "/api/specialties/131",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 204,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Date": "Sat, 05 Jul 2025 18:55:20 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+-----------------------------
+
+Reason: 📦 Unexpected Content-Type: 
+--- Request ---
+{
+  "method": "DELETE",
+  "url": "/api/specialties/82",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 204,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Date": "Sat, 05 Jul 2025 18:55:31 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+-----------------------------
+
+Reason: 📦 Unexpected Content-Type: text/html
+--- Request ---
+{
+  "method": "POST",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Sat, 05 Jul 2025 18:55:35 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+-----------------------------

@@ -1,0 +1,1530 @@
+
+=== BUG DETECTED ===
+Request: GET /
+Issues:
+  - 📦 Unexpected Content-Type: text/html
+--- Request ---
+{
+  "method": "GET",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Tue, 24 Jun 2025 20:15:23 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: HEAD /
+Issues:
+  - 📦 Unexpected Content-Type: text/html
+--- Request ---
+{
+  "method": "HEAD",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 200,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Tue, 24 Jun 2025 20:15:23 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: POST /
+Issues:
+  - 📦 Unexpected Content-Type: text/html
+--- Request ---
+{
+  "method": "POST",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Tue, 24 Jun 2025 20:15:23 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: PUT /
+Issues:
+  - 📦 Unexpected Content-Type: text/html
+--- Request ---
+{
+  "method": "PUT",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Tue, 24 Jun 2025 20:15:23 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: DELETE /
+Issues:
+  - 📦 Unexpected Content-Type: text/html
+--- Request ---
+{
+  "method": "DELETE",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Tue, 24 Jun 2025 20:15:23 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: OPTIONS /
+Issues:
+  - 📦 Unexpected Content-Type: 
+--- Request ---
+{
+  "method": "OPTIONS",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 200,
+  "body": "",
+  "headers": {
+    "Allow": "GET,HEAD,POST,PUT,PATCH,DELETE,OPTIONS",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Tue, 24 Jun 2025 20:15:23 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: PATCH /
+Issues:
+  - 📦 Unexpected Content-Type: text/html
+--- Request ---
+{
+  "method": "PATCH",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Tue, 24 Jun 2025 20:15:23 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: POST /api/owners
+Issues:
+  - ❗ Undeclared status code: 400
+  - 💥 Stack trace or crash pattern detected
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/owners",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "city": "example-string"
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Tue, 24 Jun 2025 20:15:23 GMT",
+    "Connection": "close"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: POST /api/pets
+Issues:
+  - ❗ Undeclared status code: 400
+  - 💥 Stack trace or crash pattern detected
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/pets",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "id": 123
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Tue, 24 Jun 2025 20:15:23 GMT",
+    "Connection": "close"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: POST /api/users
+Issues:
+  - ❗ Undeclared status code: 400
+  - 💥 Stack trace or crash pattern detected
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/users",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "password": "example-string"
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.Exception\",\"exMessage\":\"User must have at least a role set!\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "85",
+    "Date": "Tue, 24 Jun 2025 20:15:24 GMT",
+    "Connection": "close"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: POST /api/vets
+Issues:
+  - ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/vets",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "id": 123
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "errors": "[{\"objectName\":\"vet\",\"fieldName\":\"firstName\",\"fieldValue\":\"null\",\"errorMessage\":\"must not be empty\"},{\"objectName\":\"vet\",\"fieldName\":\"lastName\",\"fieldValue\":\"null\",\"errorMessage\":\"must not be empty\"}]",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Tue, 24 Jun 2025 20:15:24 GMT",
+    "Connection": "close"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: POST /api/visits
+Issues:
+  - ❗ Undeclared status code: 400
+  - 💥 Stack trace or crash pattern detected
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/visits",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "date": "yyyy/MM/dd"
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Tue, 24 Jun 2025 20:15:24 GMT",
+    "Connection": "close"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: GET /error
+Issues:
+  - ❗ Undeclared status code: 500
+  - 🔥 Server error
+--- Request ---
+{
+  "method": "GET",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-06-24T20:15:24.856+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 24 Jun 2025 20:15:24 GMT",
+    "Connection": "close"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: HEAD /error
+Issues:
+  - ❗ Undeclared status code: 500
+  - 🔥 Server error
+--- Request ---
+{
+  "method": "HEAD",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 24 Jun 2025 20:15:24 GMT",
+    "Connection": "close"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: POST /error
+Issues:
+  - ❗ Undeclared status code: 500
+  - 🔥 Server error
+--- Request ---
+{
+  "method": "POST",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-06-24T20:15:24.873+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 24 Jun 2025 20:15:24 GMT",
+    "Connection": "close"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: PUT /error
+Issues:
+  - ❗ Undeclared status code: 500
+  - 🔥 Server error
+--- Request ---
+{
+  "method": "PUT",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-06-24T20:15:24.882+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 24 Jun 2025 20:15:24 GMT",
+    "Connection": "close"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: DELETE /error
+Issues:
+  - ❗ Undeclared status code: 500
+  - 🔥 Server error
+--- Request ---
+{
+  "method": "DELETE",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-06-24T20:15:24.889+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 24 Jun 2025 20:15:24 GMT",
+    "Connection": "close"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: OPTIONS /error
+Issues:
+  - 📦 Unexpected Content-Type: 
+--- Request ---
+{
+  "method": "OPTIONS",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 200,
+  "body": "",
+  "headers": {
+    "Allow": "GET,HEAD,POST,PUT,PATCH,DELETE,OPTIONS",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Tue, 24 Jun 2025 20:15:24 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: PATCH /error
+Issues:
+  - ❗ Undeclared status code: 500
+  - 🔥 Server error
+--- Request ---
+{
+  "method": "PATCH",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-06-24T20:15:24.904+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 24 Jun 2025 20:15:24 GMT",
+    "Connection": "close"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: DELETE /api/pets/5
+Issues:
+  - 📦 Unexpected Content-Type: 
+--- Request ---
+{
+  "method": "DELETE",
+  "url": "/api/pets/5",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 204,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Date": "Tue, 24 Jun 2025 20:15:24 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: PUT /api/owners/5
+Issues:
+  - ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "PUT",
+  "url": "/api/owners/5",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"org.springframework.http.converter.HttpMessageNotReadableException\",\"exMessage\":\"Required request body is missing: public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Owner> org.springframework.samples.petclinic.rest.OwnerRestController.updateOwner(int,org.springframework.samples.petclinic.model.Owner,org.springframework.validation.BindingResult,org.springframework.web.util.UriComponentsBuilder)\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "453",
+    "Date": "Tue, 24 Jun 2025 20:15:24 GMT",
+    "Connection": "close"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: POST /
+Issues:
+  - 📦 Unexpected Content-Type: text/html
+--- Request ---
+{
+  "method": "POST",
+  "url": "/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 200,
+  "body": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2\" sizes=\"16x16\" />\n  <style>\n    html\n    {\n      box-sizing: border-box;\n      overflow: -moz-scrollbars-vertical;\n      overflow-y: scroll;\n    }\n    *,\n    *:before,\n    *:after\n    {\n      box-sizing: inherit;\n    }\n\n    body {\n      margin:0;\n      background: #fafafa;\n    }\n  </style>\n</head>\n\n<body>\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"position:absolute;width:0;height:0\">\n  <defs>\n    <symbol viewBox=\"0 0 20 20\" id=\"unlocked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z\"></path>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"locked\">\n      <path d=\"M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"close\">\n      <path d=\"M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow\">\n      <path d=\"M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 20 20\" id=\"large-arrow-down\">\n      <path d=\"M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z\"/>\n    </symbol>\n\n\n    <symbol viewBox=\"0 0 24 24\" id=\"jump-to\">\n      <path d=\"M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z\"/>\n    </symbol>\n\n    <symbol viewBox=\"0 0 24 24\" id=\"expand\">\n      <path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\"/>\n    </symbol>\n\n  </defs>\n</svg>\n\n<div id=\"swagger-ui\"></div>\n\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2\"> </script>\n<script src=\"webjars/springfox-swagger-ui/springfox.js?v=2.9.2\"> </script>\n</body>\n\n</html>\n",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Last-Modified": "Fri, 06 Jun 2025 08:22:01 GMT",
+    "Accept-Ranges": "bytes",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/html",
+    "Content-Length": "3318",
+    "Date": "Tue, 24 Jun 2025 20:15:24 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: POST /error
+Issues:
+  - ❗ Undeclared status code: 500
+  - 🔥 Server error
+--- Request ---
+{
+  "method": "POST",
+  "url": "/error",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 500,
+  "body": "{\"timestamp\":\"2025-06-24T20:15:26.715+0000\",\"status\":999,\"error\":\"None\",\"message\":\"No message available\"}",
+  "headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 24 Jun 2025 20:15:25 GMT",
+    "Connection": "close"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: PUT /api/vets/1
+Issues:
+  - ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "PUT",
+  "url": "/api/vets/1",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"org.springframework.http.converter.HttpMessageNotReadableException\",\"exMessage\":\"Required request body is missing: public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Vet> org.springframework.samples.petclinic.rest.VetRestController.updateVet(int,org.springframework.samples.petclinic.model.Vet,org.springframework.validation.BindingResult)\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "395",
+    "Date": "Tue, 24 Jun 2025 20:15:26 GMT",
+    "Connection": "close"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: POST /api/owners
+Issues:
+  - ❗ Undeclared status code: 400
+  - 💥 Stack trace or crash pattern detected
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/owners",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "id": 123
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Tue, 24 Jun 2025 20:15:26 GMT",
+    "Connection": "close"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: DELETE /api/owners/5
+Issues:
+  - 📦 Unexpected Content-Type: 
+--- Request ---
+{
+  "method": "DELETE",
+  "url": "/api/owners/5",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 204,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Date": "Tue, 24 Jun 2025 20:15:26 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: DELETE /api/specialties/4
+Issues:
+  - 📦 Unexpected Content-Type: 
+--- Request ---
+{
+  "method": "DELETE",
+  "url": "/api/specialties/4",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 204,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Date": "Tue, 24 Jun 2025 20:15:28 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: DELETE /api/pets/2
+Issues:
+  - 📦 Unexpected Content-Type: 
+--- Request ---
+{
+  "method": "DELETE",
+  "url": "/api/pets/2",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 204,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Date": "Tue, 24 Jun 2025 20:15:29 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: PUT /api/vets/2
+Issues:
+  - ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "PUT",
+  "url": "/api/vets/2",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"org.springframework.http.converter.HttpMessageNotReadableException\",\"exMessage\":\"Required request body is missing: public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Vet> org.springframework.samples.petclinic.rest.VetRestController.updateVet(int,org.springframework.samples.petclinic.model.Vet,org.springframework.validation.BindingResult)\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "395",
+    "Date": "Tue, 24 Jun 2025 20:15:30 GMT",
+    "Connection": "close"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: DELETE /api/pettypes/2
+Issues:
+  - 📦 Unexpected Content-Type: 
+--- Request ---
+{
+  "method": "DELETE",
+  "url": "/api/pettypes/2",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 204,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Date": "Tue, 24 Jun 2025 20:15:31 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: DELETE /api/pettypes/8
+Issues:
+  - 📦 Unexpected Content-Type: 
+--- Request ---
+{
+  "method": "DELETE",
+  "url": "/api/pettypes/8",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 204,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Date": "Tue, 24 Jun 2025 20:15:32 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: POST /api/visits
+Issues:
+  - ❗ Undeclared status code: 400
+  - 💥 Stack trace or crash pattern detected
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/visits",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "date": "yyyy/MM/dd"
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"java.lang.NullPointerException\",\"exMessage\":null}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "63",
+    "Date": "Tue, 24 Jun 2025 20:15:32 GMT",
+    "Connection": "close"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: DELETE /api/owners/3
+Issues:
+  - 📦 Unexpected Content-Type: 
+--- Request ---
+{
+  "method": "DELETE",
+  "url": "/api/owners/3",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 204,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Date": "Tue, 24 Jun 2025 20:15:33 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: PUT /api/pets/8
+Issues:
+  - ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "PUT",
+  "url": "/api/pets/8",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"org.springframework.http.converter.HttpMessageNotReadableException\",\"exMessage\":\"Required request body is missing: public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Pet> org.springframework.samples.petclinic.rest.PetRestController.updatePet(int,org.springframework.samples.petclinic.model.Pet,org.springframework.validation.BindingResult)\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "395",
+    "Date": "Tue, 24 Jun 2025 20:15:33 GMT",
+    "Connection": "close"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: POST /api/specialties
+Issues:
+  - ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/specialties",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "id": 123
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "errors": "[{\"objectName\":\"specialty\",\"fieldName\":\"name\",\"fieldValue\":\"null\",\"errorMessage\":\"must not be empty\"}]",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Tue, 24 Jun 2025 20:15:33 GMT",
+    "Connection": "close"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: POST /api/vets
+Issues:
+  - ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/vets",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "lastName": "example-string"
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "errors": "[{\"objectName\":\"vet\",\"fieldName\":\"firstName\",\"fieldValue\":\"null\",\"errorMessage\":\"must not be empty\"}]",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Tue, 24 Jun 2025 20:15:34 GMT",
+    "Connection": "close"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: PUT /api/visits/3
+Issues:
+  - ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "PUT",
+  "url": "/api/visits/3",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"org.springframework.http.converter.HttpMessageNotReadableException\",\"exMessage\":\"Required request body is missing: public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Visit> org.springframework.samples.petclinic.rest.VisitRestController.updateVisit(int,org.springframework.samples.petclinic.model.Visit,org.springframework.validation.BindingResult)\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "403",
+    "Date": "Tue, 24 Jun 2025 20:15:34 GMT",
+    "Connection": "close"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: DELETE /api/vets/3
+Issues:
+  - 📦 Unexpected Content-Type: 
+--- Request ---
+{
+  "method": "DELETE",
+  "url": "/api/vets/3",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 204,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Date": "Tue, 24 Jun 2025 20:15:36 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: POST /api/specialties
+Issues:
+  - ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/specialties",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "id": 123
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "errors": "[{\"objectName\":\"specialty\",\"fieldName\":\"name\",\"fieldValue\":\"null\",\"errorMessage\":\"must not be empty\"}]",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Length": "0",
+    "Date": "Tue, 24 Jun 2025 20:15:36 GMT",
+    "Connection": "close"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: DELETE /api/pettypes/1
+Issues:
+  - 📦 Unexpected Content-Type: 
+--- Request ---
+{
+  "method": "DELETE",
+  "url": "/api/pettypes/1",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 204,
+  "body": "",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Date": "Tue, 24 Jun 2025 20:15:37 GMT",
+    "Keep-Alive": "timeout=60",
+    "Connection": "keep-alive"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: PUT /api/specialties/1
+Issues:
+  - ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "PUT",
+  "url": "/api/specialties/1",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"org.springframework.http.converter.HttpMessageNotReadableException\",\"exMessage\":\"Required request body is missing: public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Specialty> org.springframework.samples.petclinic.rest.SpecialtyRestController.updateSpecialty(int,org.springframework.samples.petclinic.model.Specialty,org.springframework.validation.BindingResult)\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "419",
+    "Date": "Tue, 24 Jun 2025 20:15:37 GMT",
+    "Connection": "close"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: PUT /api/vets/2
+Issues:
+  - ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "PUT",
+  "url": "/api/vets/2",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"org.springframework.http.converter.HttpMessageNotReadableException\",\"exMessage\":\"Required request body is missing: public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Vet> org.springframework.samples.petclinic.rest.VetRestController.updateVet(int,org.springframework.samples.petclinic.model.Vet,org.springframework.validation.BindingResult)\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "395",
+    "Date": "Tue, 24 Jun 2025 20:15:38 GMT",
+    "Connection": "close"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: POST /api/users
+Issues:
+  - ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "POST",
+  "url": "/api/users",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "roles": [
+      {
+        "id": 123,
+        "name": "example-string"
+      }
+    ]
+  }
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"org.springframework.orm.jpa.JpaSystemException\",\"exMessage\":\"ids for this class must be manually assigned before calling save(): org.springframework.samples.petclinic.model.User; nested exception is org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): org.springframework.samples.petclinic.model.User\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "379",
+    "Date": "Tue, 24 Jun 2025 20:15:39 GMT",
+    "Connection": "close"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: PUT /api/pets/10
+Issues:
+  - ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "PUT",
+  "url": "/api/pets/10",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"org.springframework.http.converter.HttpMessageNotReadableException\",\"exMessage\":\"Required request body is missing: public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Pet> org.springframework.samples.petclinic.rest.PetRestController.updatePet(int,org.springframework.samples.petclinic.model.Pet,org.springframework.validation.BindingResult)\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "395",
+    "Date": "Tue, 24 Jun 2025 20:15:39 GMT",
+    "Connection": "close"
+  }
+}
+====================
+
+=== BUG DETECTED ===
+Request: PUT /api/owners/1
+Issues:
+  - ❗ Undeclared status code: 400
+--- Request ---
+{
+  "method": "PUT",
+  "url": "/api/owners/1",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": null
+}
+--- Response ---
+{
+  "status": 400,
+  "body": "{\"className\":\"org.springframework.http.converter.HttpMessageNotReadableException\",\"exMessage\":\"Required request body is missing: public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Owner> org.springframework.samples.petclinic.rest.OwnerRestController.updateOwner(int,org.springframework.samples.petclinic.model.Owner,org.springframework.validation.BindingResult,org.springframework.web.util.UriComponentsBuilder)\"}",
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "453",
+    "Date": "Tue, 24 Jun 2025 20:15:39 GMT",
+    "Connection": "close"
+  }
+}
+====================

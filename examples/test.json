@@ -1,0 +1,223 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "Create REST Endpoint",
+    "description" : "Sample Test",
+    "version" : "100"
+  },
+  "servers" : [ {
+    "url" : "https://company.com:8090/ws/RegressionEnv/automation"
+  } ],
+  "tags" : [ {
+    "name" : "AUTOREST"
+  } ],
+  "paths" : {
+    "/AUTOREST/ep1" : {
+      "post" : {
+        "tags" : [ "AUTOREST" ],
+        "summary" : "MultipleResponseCodesProcess",
+        "parameters" : [ {
+          "name" : "customheader",
+          "in" : "header",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "content" : {
+              "text/plain" : {
+                "schema" : {
+                  "type" : "string"
+                }
+              }
+            }
+          },
+          "500" : {
+            "$ref" : "#/components/responses/500"
+          },
+          "522" : {
+            "$ref" : "#/components/responses/522"
+          },
+          "401" : {
+            "$ref" : "#/components/responses/401"
+          },
+          "413" : {
+            "$ref" : "#/components/responses/413"
+          },
+          "404" : {
+            "$ref" : "#/components/responses/404"
+          },
+          "503" : {
+            "$ref" : "#/components/responses/503"
+          },
+          "300" : {
+            "description" : "300 description",
+            "content" : {
+              "multipart/form-data" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Root"
+                }
+              }
+            }
+          },
+          "400" : {
+            "description" : "400 description",
+            "content" : {
+              "text/html" : {
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Root"
+                }
+              }
+            }
+          },
+          "505" : {
+            "description" : "505 description",
+            "content" : {
+              "application/xml" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/element"
+                }
+              }
+            }
+          },
+          "default" : {
+            "description" : "default description",
+            "content" : {
+              "application/binary" : { }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "Root" : {
+        "oneOf" : [ {
+          "type" : "string"
+        }, {
+          "type" : "string"
+        } ]
+      },
+      "element" : {
+        "minItems" : 1,
+        "type" : "array",
+        "items" : {
+          "type" : "object",
+          "properties" : {
+            "child1" : {
+              "type" : "object",
+              "properties" : {
+                "child2" : {
+                  "type" : "number",
+                  "format" : "double"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "responses" : {
+      "default" : {
+        "description" : "Unidentified Exception",
+        "content" : {
+          "text/html" : {
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      },
+      "400" : {
+        "description" : "Bad Request - There are miscellaneous errors with the request, for example, mismatches between the request and what is allowed for the operation.",
+        "content" : {
+          "text/html" : {
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      },
+      "500" : {
+        "description" : "Internal Server Error - This generic error message appears when an unexpected condition was encountered and a more specific message is not suitable.",
+        "content" : {
+          "text/html" : {
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      },
+      "522" : {
+        "description" : "Connection Timed Out - This message is returned to the client when the SOA Worker Maximum Execution Time has been exceeded.",
+        "content" : {
+          "text/html" : {
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      },
+      "401" : {
+        "description" : "Unauthorized or 403 Forbidden - Authentication errors.",
+        "content" : {
+          "text/html" : {
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      },
+      "413" : {
+        "description" : "Request Entity Too Large - The request data was too large. This is based on the SOA Input Size quota.",
+        "content" : {
+          "text/html" : {
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      },
+      "404" : {
+        "description" : "Not Found - Invalid URL path.",
+        "content" : {
+          "text/html" : {
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      },
+      "503" : {
+        "description" : "Service Unavailable - The caller has hit a throttle or the request was rejected because the {conKeyRefs.Runtime} is starting or stopping.",
+        "content" : {
+          "text/html" : {
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes" : {
+      "X-API-Key" : {
+        "type" : "apiKey",
+        "description" : "This API key is optional.",
+        "name" : "X-API-Key",
+        "in" : "header"
+      }
+    }
+  },
+  "security" : [ {
+    "X-API-Key" : [ ]
+  }, { } ]
+}
