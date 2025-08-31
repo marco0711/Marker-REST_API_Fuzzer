@@ -1,6 +1,7 @@
 import time
 import random
 import datetime
+import argparse
 from parser.swagger import OpenAPIParser
 from generator.request import build_request, RESOLVE_DEPENDENCIES
 from generator.selection import SELECT_TEST, CHOOSE_COMPATIBLE_ENDPOINT, IS_SEED_ENDPOINT, SELECT_FALLBACK_SEEDS
@@ -14,9 +15,21 @@ from logger.utils import log_iteration_debug
 from mutation.mutate import mutate_request, deep_mutation
 from utils.utils import sequence_signature
 
+# === Config from CLI ===
+cli = argparse.ArgumentParser(description="Run SAPIEN fuzzer")
+cli.add_argument("--spec", type=str, default="examples/target-ncs.json",
+                    help="Path to OpenAPI specification (JSON/YAML)")
+cli.add_argument("--base-url", type=str, default="http://localhost:8080",
+                    help="Base URL of the target service")
+cli.add_argument("--time", type=int, default=120,
+                    help="Maximum fuzzing time in seconds")
+
+args = cli.parse_args()
+
 # === Config ===
-SPEC_PATH = "examples/target-ncs.json"
-BASE_URL = "http://localhost:8080"
+SPEC_PATH = args.spec
+BASE_URL = args.base_url
+MAX_TIME_SECONDS = args.time
 ALPHA = 1.0
 BETA = 0.5
 MUTATION_PROBABILITY = 0.4  
@@ -28,8 +41,7 @@ last_total_score = 0.0
 #compatible endpoints count
 no_comp_count = 0
 
-#MAX_ITERATIONS = 50
-MAX_TIME_SECONDS = 120  
+#MAX_ITERATIONS = 50  
 start_time = time.time()
 
 timestamp_prefix = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
