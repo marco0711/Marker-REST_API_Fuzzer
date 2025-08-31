@@ -19,7 +19,7 @@ from utils.utils import sequence_signature
 cli = argparse.ArgumentParser(description="Run SAPIEN fuzzer")
 cli.add_argument("--spec", type=str, default="examples/target-ncs.json",
                     help="Path to OpenAPI specification (JSON/YAML)")
-cli.add_argument("--base-url", type=str, default="http://localhost:8080",
+cli.add_argument("--target", type=str, default="http://localhost:8080",
                     help="Base URL of the target service")
 cli.add_argument("--time", type=int, default=120,
                     help="Maximum fuzzing time in seconds")
