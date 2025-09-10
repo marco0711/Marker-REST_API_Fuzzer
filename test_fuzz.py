@@ -16,20 +16,23 @@ from mutation.mutate import mutate_request, deep_mutation
 from utils.utils import sequence_signature
 
 # === Config from CLI ===
-cli = argparse.ArgumentParser(description="Run SAPIEN fuzzer")
+cli = argparse.ArgumentParser(description="Run Marker-REST_API_Fuzzer")
 cli.add_argument("--spec", type=str, default="examples/target-ncs.json",
                     help="Path to OpenAPI specification (JSON/YAML)")
 cli.add_argument("--target", type=str, default="http://localhost:8080",
                     help="Base URL of the target service")
 cli.add_argument("--time", type=int, default=120,
                     help="Maximum fuzzing time in seconds")
+cli.add_argument("--out", type=str, default="feedback/logs/",
+                    help="Path to output files gneration")
 
 args = cli.parse_args()
 
 # === Config ===
 SPEC_PATH = args.spec
-BASE_URL = args.base_url
+BASE_URL = args.target
 MAX_TIME_SECONDS = args.time
+OUTPUT = args.out
 ALPHA = 1.0
 BETA = 0.5
 MUTATION_PROBABILITY = 0.4  
@@ -52,7 +55,7 @@ parser = OpenAPIParser(SPEC_PATH)
 endpoints = parser.parse()
 spec_info = parser.get_spec_info()
 param_names = parser.get_dynamic_param_names()
-response_analyzer = ResponseAnalyzer(spec_info, timestamp_prefix=timestamp_prefix)
+response_analyzer = ResponseAnalyzer(spec_info, timestamp_prefix=timestamp_prefix, output_path=OUTPUT)
 cumulative_coverage = {
     "paths": set(),
     "operations": set(),

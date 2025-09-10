@@ -2,8 +2,10 @@ import json
 import os
 from typing import Dict, List, Optional
 
+
+
 class ResponseAnalyzer:
-    def __init__(self, spec_info: Dict, timestamp_prefix: Optional[str] = None):
+    def __init__(self, spec_info: Dict, timestamp_prefix: Optional[str] = None, output_path: Optional[str] = None):
         self.valid_status_codes = spec_info.get("status_codes", set())
         self.spec_info = spec_info
         self.bug_groups = {
@@ -16,9 +18,9 @@ class ResponseAnalyzer:
 
         # Set log path
         if timestamp_prefix:
-            self.bug_log_path = f"feedback/logs/{timestamp_prefix}_bugs_grouped.log"
+            self.bug_log_path = f"{output_path}/{timestamp_prefix}_bugs_grouped.log"
         else:
-            self.bug_log_path = "feedback/logs/bugs_grouped.log"
+            self.bug_log_path = f"{output_path}/bugs_grouped.log"
 
         os.makedirs(os.path.dirname(self.bug_log_path), exist_ok=True)
         open(self.bug_log_path, "w").close()
