@@ -1877,7 +1877,7 @@
                   "305 USE_PROXY",
                   "307 TEMPORARY_REDIRECT",
                   "308 PERMANENT_REDIRECT",
-                  "400 BAD_REQUEST",
+                  "BAD_REQUEST",
                   "401 UNAUTHORIZED",
                   "402 PAYMENT_REQUIRED",
                   "403 FORBIDDEN",
