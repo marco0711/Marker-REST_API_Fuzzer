@@ -49,6 +49,15 @@ start_time = time.time()
 
 timestamp_prefix = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
 
+# === DEBUG PRINT === 
+
+DEBUG = False  # Set to False to disable all debug prints
+
+def dprint(*args, **kwargs):
+    """Debug print — only prints when DEBUG is True."""
+    if DEBUG:
+        print(*args, **kwargs)
+
 
 # === Initialization ===
 parser = OpenAPIParser(SPEC_PATH)
@@ -74,7 +83,7 @@ auth_handler = AuthHandler(
 )
 
 print("🔍 Parsed endpoints:")
-print(endpoints)
+dprint(endpoints)
 
 corpus = []
 seen_fields = set()
@@ -136,15 +145,14 @@ for ep in seed_endpoints:
 
 
 print(f"✅ Seed corpus initialized with {len(corpus)} tests.\n")
-print(dynamic_id_table)
+dprint(dynamic_id_table)
 
 # === Step 2: Fuzzing Loop ===
 #for i in range(MAX_ITERATIONS):
 i = 0
 while time.time() - start_time < MAX_TIME_SECONDS:
-    print(f"\n🔁 Iteration {i+1}")
-    #print(f"id table:  {dynamic_id_table}")
-
+    dprint(f"\n🔁 Iteration {i+1}")
+    
     try:
         base_test = SELECT_TEST(corpus)
     except ValueError as e:
@@ -155,7 +163,7 @@ while time.time() - start_time < MAX_TIME_SECONDS:
         #extend sequence if in discovery mode
         try:
             next_ep = CHOOSE_COMPATIBLE_ENDPOINT(base_test, endpoints, dynamic_id_table)
-            print(f"➕ Extending with: {next_ep.method} {next_ep.path}")
+            dprint(f"➕ Extending with: {next_ep.method} {next_ep.path}")
 
             new_request = build_request(next_ep)
             resolved_request = RESOLVE_DEPENDENCIES(new_request, dynamic_id_table)
@@ -172,7 +180,7 @@ while time.time() - start_time < MAX_TIME_SECONDS:
     
         except RuntimeError as e:
             no_comp_count +=1
-            print("⚠️ No compatible endpoint:", e)
+            dprint("⚠️ No compatible endpoint:", e)
 
             if no_comp_count >=5 :        
                 # collect endpoints not yet in corpus
@@ -181,7 +189,7 @@ while time.time() - start_time < MAX_TIME_SECONDS:
 
                 if unused_endpoints:
                     next_ep = random.choice(unused_endpoints)
-                    print(f"🌱 Forcing exploration with unused endpoint: {next_ep.method} {next_ep.path}")
+                    dprint(f"🌱 Forcing exploration with unused endpoint: {next_ep.method} {next_ep.path}")
 
                 new_request = build_request(next_ep)
                 resolved_request = RESOLVE_DEPENDENCIES(new_request, dynamic_id_table)
@@ -205,12 +213,12 @@ while time.time() - start_time < MAX_TIME_SECONDS:
 
         if not new_signature:
             stagnation_counter += 1
-            print(f"🔁 Duplicate sequence detected, skipping. \n stagnation counter: {stagnation_counter}")
+            dprint(f"🔁 Duplicate sequence detected, skipping. \n stagnation counter: {stagnation_counter}")
         elif current_total_score <= last_total_score:
             # unique but not useful — softer penalty
             stagnation_counter += 0.2
             seen_signatures.add(sig)
-            print(f"⚠️ Unique sequence but no coverage gain. stagnation counter: {stagnation_counter}")
+            dprint(f"⚠️ Unique sequence but no coverage gain. stagnation counter: {stagnation_counter}")
         else:
             stagnation_counter = 0
             seen_signatures.add(sig)
@@ -226,7 +234,7 @@ while time.time() - start_time < MAX_TIME_SECONDS:
                 print(f"\n🔄 Entering MUTATION MODE after {i+1} iterations (stagnation for {STAGNATION_WINDOW})")
                 continue
 
-    print(f"📤 Sending sequence: {[req['method'] + ' ' + req['url'] for req in extended_sequence]}")
+    dprint(f"📤 Sending sequence: {[req['method'] + ' ' + req['url'] for req in extended_sequence]}")
     responses = send_sequence(extended_sequence, BASE_URL, auth_handler=auth_handler)
     last_response = responses[-1]
 
@@ -249,8 +257,8 @@ while time.time() - start_time < MAX_TIME_SECONDS:
     # Feedback: coverage
     seq_coverage = extract_seq_coverage(extended_sequence, responses)
     tcl_score = calculate_tcl_score(seq_coverage, spec_info)
-    #DEBUG 
-    #print_tcl_breakdown(seq_coverage, spec_info)
+    if DEBUG: 
+        print_tcl_breakdown(seq_coverage, spec_info)
 
     # Update ID table
     new_ids = EXTRACT_IDS(last_response["body"], param_names)
@@ -267,12 +275,12 @@ while time.time() - start_time < MAX_TIME_SECONDS:
         "tcl": tcl_score
     })
 
-    print(f"📈 TCL: {tcl_score:.2f}, Diversity: {diversity:.2f}, Total Corpus: {len(corpus)}")
-    time.sleep(0.2)
+    dprint(f"📈 TCL: {tcl_score:.2f}, Diversity: {diversity:.2f}, Total Corpus: {len(corpus)}")
     i+=1
 
 print("\n🏁 Stateful fuzzing complete.")
 final_score = calculate_tcl_score(cumulative_coverage, spec_info)
 print(f"\n✅ Final Cumulative TCL Score: {final_score:.2f}")
-response_analyzer.write_bug_report()
+response_analyzer.write_bug_report("text")
+response_analyzer.write_bug_report("json")
 print(f"\n🐞 Grouped bug report saved to: {response_analyzer.bug_log_path}")
