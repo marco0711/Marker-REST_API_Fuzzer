@@ -21,7 +21,7 @@ cli.add_argument("--spec", type=str, default="examples/target-ncs.json",
                     help="Path to OpenAPI specification (JSON/YAML)")
 cli.add_argument("--target", type=str, default="http://localhost:8080",
                     help="Base URL of the target service")
-cli.add_argument("--time", type=int, default=120,
+cli.add_argument("--time", type=int, default=300,
                     help="Maximum fuzzing time in seconds")
 cli.add_argument("--out", type=str, default="feedback/logs/",
                     help="Path to output files gneration")
