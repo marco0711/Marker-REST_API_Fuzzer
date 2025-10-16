@@ -113,7 +113,7 @@ def generate_example_value(schema_def):
             }.items() if v is not None
         }
 
-    print(f"⚠️ Warning: Unknown schema type, using fallback: {schema_def}")
+    #print(f"⚠️ Warning: Unknown schema type, using fallback: {schema_def}")
     return "fallback"
 
 

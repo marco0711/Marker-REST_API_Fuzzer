@@ -86,7 +86,7 @@ def CHOOSE_COMPATIBLE_ENDPOINT(base_test: dict, endpoints: List[Endpoint], dynam
         raise RuntimeError("No compatible endpoint found to extend sequence.")
     
     base_endpoint = find_endpoint_by_request(base_test["sequence"][-1], endpoints)
-    print(f"🧩 Compatible endpoints found: {len(compatible)}")
+    #print(f"🧩 Compatible endpoints found: {len(compatible)}")
     scored = sorted(compatible, key=lambda ep: score_candidate(base_endpoint, ep), reverse=True)
     return scored[0]
 
