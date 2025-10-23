@@ -33,8 +33,6 @@ SPEC_PATH = args.spec
 BASE_URL = args.target
 MAX_TIME_SECONDS = args.time
 OUTPUT = args.out
-ALPHA = 1.0
-BETA = 0.5
 MUTATION_PROBABILITY = 0.4  
 # For adaptive mutation mode
 mutation_mode = False
