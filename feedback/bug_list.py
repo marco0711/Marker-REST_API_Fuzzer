@@ -160,11 +160,45 @@ class ResponseAnalyzer:
         # === JSON FORMAT ===
         elif type == "json":
             json_path = self.bug_log_path.replace(".log", ".json")
-            with open(json_path, "w", encoding="utf-8") as log:
-                json.dump(unique_bugs, log, indent=2)
-            print(f"✅ Bug report written to {json_path} (deduplicated JSON)")
 
-        else:
-            raise ValueError("Invalid type for write_bug_report. Use 'text' or 'json'.")
+            # Unified category mapping (used in comparison pipeline)
+            category_map = {
+                "server_error": "Server Error 5xx",
+                "status_code": "Unexpected status",
+                "stack_trace": "Server Error 5xx",
+                "invalid_content_type": "Invalid/mismatched response",
+                "empty_body": "Empty body"
+            }
+
+            normalized_entries = []
+
+            for category, entries in unique_bugs.items():
+                mapped_category = category_map.get(category, category)
+                for entry in entries:
+                    req = entry.get("request", {})
+                    resp = entry.get("response", {})
+
+                    method = req.get("method", "")
+                    url = normalize_url(req.get("url", ""))
+                    status = str(resp.get("status") or resp.get("status_code") or "unknown")
+                    reason = entry.get("reason", "")
+                    body_snippet = (resp.get("body") or resp.get("text") or "")[:200]
+
+                    normalized_entries.append({
+                        "fuzzer": "Marker",
+                        "category": mapped_category,
+                        "method": method,
+                        "path": url,
+                        "normalized_path": url,  # you can later call normalize_path() globally
+                        "status": status,
+                        "normalized_status": status if status.isdigit() else "unknown",
+                        "reason": reason,
+                        "message": body_snippet.strip(),
+                    })
+
+            with open(json_path, "w", encoding="utf-8") as log:
+                json.dump(normalized_entries, log, indent=2)
+
+            print(f"✅ Bug report written to {json_path} (normalized JSON format)")
 
 
