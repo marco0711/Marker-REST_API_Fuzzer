@@ -1,9 +1,10 @@
 import json
+import os
 import re
 from typing import Any, Dict, List, Set, Tuple
 from feedback.utils import match_paths_with_dependencies, match_operations_with_dependencies
 
-def extract_seq_coverage(requests: List[Dict], responses: List[Dict]) -> Dict[str, Set]:
+def extract_seq_coverage(requests: List[Dict], responses: List[Dict], spec_info: Dict[str, Set]) -> Dict[str, Set]:
     """
     Extracts which API elements (paths, operations, parameters, status codes,
     response fields, and input content-types) are exercised by a request sequence.
@@ -17,11 +18,21 @@ def extract_seq_coverage(requests: List[Dict], responses: List[Dict]) -> Dict[st
         "input_content_types": set()
     }
 
+    all_paths = spec_info.get("paths")
+    all_ops = spec_info.get("operations")
+
+
     for req in requests:
         url = req["url"].split("?")[0]
         method = req["method"]
-        coverage["paths"].add(url)
-        coverage["operations"].add((method, url))
+
+        # Count paths
+        normalized_path = match_paths_with_dependencies({url},all_paths)
+        coverage["paths"].update(normalized_path)
+
+        # Count operations
+        normalized_ops = match_operations_with_dependencies({(method,url)},all_ops)
+        coverage["operations"].update((normalized_ops))
 
         # Parameters from headers and body
         if req.get("headers"):
@@ -33,7 +44,8 @@ def extract_seq_coverage(requests: List[Dict], responses: List[Dict]) -> Dict[st
         if req.get("body"):
             ctype = req.get("headers", {}).get("Content-Type")
             if ctype:
-                coverage["input_content_types"].add((method, url, ctype))
+                for norm_op in normalized_ops:
+                    coverage["input_content_types"].add((norm_op, ctype))
 
     for resp in responses:
         coverage["status_codes"].add(str(resp["status"]))
@@ -82,6 +94,76 @@ def calculate_tcl_score(seq_coverage: Dict[str, Set], spec_info: Dict[str, Set])
 
     return total_score
 
+def total_TCL_score(cumulative_coverage: dict, spec_info: dict, output_file: str):
+    """
+    Computes a hierarchical total TCL score across the six coverage levels.
+    You can only advance to the next level if you have 100% coverage on the current one.
+
+    Levels:
+        1. paths
+        2. operations
+        3. input_content_types
+        4. parameters
+        5. status_codes
+        6. response_fields
+    """
+
+    levels = [
+        ("paths", "Paths coverage"),
+        ("operations", "Operations coverage"),
+        ("input_content_types", "Input content types coverage"),
+        ("parameters", "Parameters coverage"),
+        ("status_codes", "Status code coverage"),
+        ("response_fields", "Response fields coverage")
+    ]
+
+    score = 0.0
+    detailed_results = {}
+
+    for i, (field, label) in enumerate(levels, start=1):
+        covered = cumulative_coverage.get(field, set())
+        total = spec_info.get(field, set())
+
+        if not total:
+            # If spec doesn't define this level, skip it but count as full
+            detailed_results[field] = {"covered": 0, "total": 0, "coverage": 1.0}
+            score += 1
+            continue
+
+        coverage_ratio = len(covered) / len(total)
+        detailed_results[field] = {
+            "covered": len(covered),
+            "total": len(total),
+            "coverage": round(coverage_ratio, 3)
+        }
+
+        if coverage_ratio >= 1.0:
+            score += 1
+        else:
+            # Optional: fractional contribution of last level
+            score += coverage_ratio
+            break  # stop at first incomplete level
+
+    # Write final hierarchical score to bug report file
+    result_data = {
+        "final_total_TCL": round(score, 3),
+        "level_breakdown": detailed_results
+    }
+
+    try:
+        if os.path.exists(output_file):
+            with open(output_file, "a", encoding="utf-8") as f:
+                f.write("\n\n=== FINAL TCL SCORE ===\n")
+                f.write(json.dumps(result_data, indent=2))
+                f.write("\n")
+        else:
+            with open(output_file, "w", encoding="utf-8") as f:
+                f.write(json.dumps(result_data, indent=2))
+                f.write("\n")
+    except Exception as e:
+        print(f"[!] Error writing final TCL score: {e}")
+
+    return score
 
 
 def CALCULATE_DIVERSITY(response: dict, seen_fields: set) -> Tuple[float, set]:
