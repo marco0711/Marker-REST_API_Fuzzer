@@ -193,7 +193,7 @@ class OpenAPIParser:
             "status_codes": status_codes,
             "response_fields": response_fields,
             "input_content_types": input_content_types,
-            "response_expectations": response_expectations, 
+            "response_fields": response_expectations, 
         }
 
 
