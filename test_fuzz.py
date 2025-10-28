@@ -17,9 +17,9 @@ from utils.utils import sequence_signature
 
 # === Config from CLI ===
 cli = argparse.ArgumentParser(description="Run Marker-REST_API_Fuzzer")
-cli.add_argument("--spec", type=str, default="examples/target-petclinic.json",
+cli.add_argument("--spec", type=str, default="examples/target-ncs.json",
                     help="Path to OpenAPI specification (JSON/YAML)")
-cli.add_argument("--target", type=str, default="http://localhost:8080/petclinic",
+cli.add_argument("--target", type=str, default="http://localhost:8080",
                     help="Base URL of the target service")
 cli.add_argument("--time", type=int, default=300,
                     help="Maximum fuzzing time in seconds")
@@ -147,6 +147,7 @@ dprint(dynamic_id_table)
 i = 0
 while time.time() - start_time < MAX_TIME_SECONDS:
     dprint(f"\n🔁 Iteration {i+1}")
+    new_signature = False
     
     try:
         base_test = SELECT_TEST(corpus)
@@ -192,6 +193,9 @@ while time.time() - start_time < MAX_TIME_SECONDS:
                 new_request = build_request(next_ep)
                 resolved_request = RESOLVE_DEPENDENCIES(new_request, dynamic_id_table)
                 extended_sequence = [resolved_request]
+
+                sig = sequence_signature(extended_sequence, endpoints)
+                new_signature = sig not in seen_signatures
 
                 no_comp_count = 0
             else:
