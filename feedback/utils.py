@@ -13,7 +13,7 @@ def match_path(concrete: str, spec: str) -> bool:
         return False
 
     for cp, sp in zip(concrete_parts, spec_parts):
-        if sp.startswith("{") and sp.endswith("}"):
+        if sp.startswith("{") and sp.endswith("}") or sp == "*":
             continue  # it's a parameter → allow any value
         if cp != sp:
             return False
