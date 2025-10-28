@@ -272,7 +272,7 @@ while time.time() - start_time < MAX_TIME_SECONDS:
 
     # Run TCL based mutation mode trigger logic
     if not mutation_mode:
-        current_score = total_TCL_score(cumulative_coverage, spec_info, response_analyzer.bug_log_path)
+        current_score = total_TCL_score(cumulative_coverage, spec_info)
         if current_score >= 2:
             mutation_mode = True
             print(r"""
@@ -290,4 +290,5 @@ response_analyzer.write_bug_report("json")
 print(f"\n🐞 Grouped bug report saved to: {response_analyzer.bug_log_path}")
 final_score = total_TCL_score(cumulative_coverage, spec_info, response_analyzer.bug_log_path)
 print(f"\n✅ Final Cumulative TCL Score: {final_score:.2f}")
-print_tcl_breakdown(cumulative_coverage, spec_info)
+if DEBUG:
+    print_tcl_breakdown(cumulative_coverage, spec_info)

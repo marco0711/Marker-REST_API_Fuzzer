@@ -99,9 +99,9 @@ def calculate_tcl_score(seq_coverage: Dict[str, Set], spec_info: Dict[str, Set])
 
     return total_score
 
-def total_TCL_score(cumulative_coverage: dict, spec_info: dict, output_file: str):
+def total_TCL_score(cumulative_coverage: dict, spec_info: dict, output_file: str = None):
     """
-    Computes a hierarchical total TCL score across the six coverage levels.
+    Computes a hierarchical total TCL score across six coverage levels.
     You can only advance to the next level if you have 100% coverage on the current one.
 
     Levels:
@@ -124,13 +124,14 @@ def total_TCL_score(cumulative_coverage: dict, spec_info: dict, output_file: str
 
     score = 0.0
     detailed_results = {}
+    stop_index = None  # track where the first incomplete level occurs
 
     for i, (field, label) in enumerate(levels, start=1):
         covered = cumulative_coverage.get(field, set())
         total = spec_info.get(field, set())
 
         if not total:
-            # If spec doesn't define this level, skip it but count as full
+            # If spec doesn't define this level, skip but count as full
             detailed_results[field] = {"covered": 0, "total": 0, "coverage": 1.0}
             score += 1
             continue
@@ -145,31 +146,40 @@ def total_TCL_score(cumulative_coverage: dict, spec_info: dict, output_file: str
         if coverage_ratio >= 1.0:
             score += 1
         else:
-            # Optional: fractional contribution of last level
             score += coverage_ratio
-            break  # stop at first incomplete level
+            stop_index = i  # first incomplete level
+            break  # stop hierarchical advancement
 
-    # Write final hierarchical score to bug report file
+    # Fill remaining levels if any for reporting
+    if stop_index is not None:
+        for field, label in levels[stop_index:]:
+            covered = cumulative_coverage.get(field, set())
+            total = spec_info.get(field, set())
+            ratio = round(len(covered) / len(total), 3) if total else 1.0
+            detailed_results[field] = {
+                "covered": len(covered) if total else 0,
+                "total": len(total) if total else 0,
+                "coverage": ratio
+            }
+
     result_data = {
         "final_total_TCL": round(score, 3),
         "level_breakdown": detailed_results
     }
 
-    try:
-        if os.path.exists(output_file):
-            with open(output_file, "a", encoding="utf-8") as f:
-                f.write("\n\n=== FINAL TCL SCORE ===\n")
+    # Optional file output
+    if output_file:
+        try:
+            mode = "a" if os.path.exists(output_file) else "w"
+            with open(output_file, mode, encoding="utf-8") as f:
+                if mode == "a":
+                    f.write("\n\n=== FINAL TCL SCORE ===\n")
                 f.write(json.dumps(result_data, indent=2))
                 f.write("\n")
-        else:
-            with open(output_file, "w", encoding="utf-8") as f:
-                f.write(json.dumps(result_data, indent=2))
-                f.write("\n")
-    except Exception as e:
-        print(f"[!] Error writing final TCL score: {e}")
+        except Exception as e:
+            print(f"[!] Error writing final TCL score: {e}")
 
     return score
-
 
 def CALCULATE_DIVERSITY(response: dict, seen_fields: set) -> Tuple[float, set]:
     """
