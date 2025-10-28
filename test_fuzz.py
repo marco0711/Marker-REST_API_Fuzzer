@@ -5,7 +5,7 @@ import argparse
 from parser.swagger import OpenAPIParser
 from generator.request import build_request, RESOLVE_DEPENDENCIES
 from generator.selection import SELECT_TEST, CHOOSE_COMPATIBLE_ENDPOINT, IS_SEED_ENDPOINT, SELECT_FALLBACK_SEEDS
-from feedback.tcl import CALCULATE_DIVERSITY, extract_seq_coverage, calculate_tcl_score
+from feedback.tcl import CALCULATE_DIVERSITY, extract_seq_coverage, calculate_tcl_score, total_TCL_score
 from feedback.utils import print_tcl_breakdown
 from feedback.id_tracking import EXTRACT_IDS
 from feedback.bug_list import ResponseAnalyzer
@@ -17,9 +17,9 @@ from utils.utils import sequence_signature
 
 # === Config from CLI ===
 cli = argparse.ArgumentParser(description="Run Marker-REST_API_Fuzzer")
-cli.add_argument("--spec", type=str, default="examples/target-ncs.json",
+cli.add_argument("--spec", type=str, default="examples/target-petclinic.json",
                     help="Path to OpenAPI specification (JSON/YAML)")
-cli.add_argument("--target", type=str, default="http://localhost:8080",
+cli.add_argument("--target", type=str, default="http://localhost:8080/petclinic",
                     help="Base URL of the target service")
 cli.add_argument("--time", type=int, default=300,
                     help="Maximum fuzzing time in seconds")
@@ -37,7 +37,7 @@ MUTATION_PROBABILITY = 0.4
 # For adaptive mutation mode
 mutation_mode = False
 stagnation_counter = 0
-STAGNATION_WINDOW = 25
+STAGNATION_WINDOW = 40
 last_total_score = 0.0
 #compatible endpoints count
 no_comp_count = 0
@@ -104,7 +104,7 @@ for ep in seed_endpoints:
     last_response = responses[-1]
 
     #save seeds signatures
-    sig = sequence_signature([resolved])
+    sig = sequence_signature([resolved], endpoints)
     seen_signatures.add(sig)
 
     # Genereating log file
@@ -113,18 +113,15 @@ for ep in seed_endpoints:
     #Response analysis for bugs
     response_analyzer.analyze(resolved, last_response)
 
-    #cumulative tcl 
-    seq_coverage = extract_seq_coverage([resolved], responses)
+    #TCL computing 
+    seq_coverage = extract_seq_coverage([resolved], responses, spec_info)
+    tcl_score = calculate_tcl_score(seq_coverage, spec_info)
     for k in cumulative_coverage:
         cumulative_coverage[k].update(seq_coverage.get(k, set()))
 
     # Diversity feedback
     diversity, new_fields = CALCULATE_DIVERSITY(last_response, seen_fields)
     seen_fields.update(new_fields)
-
-    # Coverage feedback
-    seq_coverage = extract_seq_coverage([resolved], responses)
-    tcl_score = calculate_tcl_score(seq_coverage, spec_info)
 
     # Extract dynamic IDs
     new_ids = EXTRACT_IDS(last_response["body"], param_names)
@@ -202,7 +199,7 @@ while time.time() - start_time < MAX_TIME_SECONDS:
         extended_sequence = deep_mutation(base_test["sequence"], endpoints)
 
 
-    sig = sequence_signature(extended_sequence)
+    sig = sequence_signature(extended_sequence, endpoints)
     new_signature = sig not in seen_signatures
 
     # Run mutation mode trigger logic 
@@ -242,19 +239,16 @@ while time.time() - start_time < MAX_TIME_SECONDS:
     #Response analysis for bugs
     response_analyzer.analyze(extended_sequence[-1], responses[-1])
 
-    #Cumulative tcl
-    seq_coverage = extract_seq_coverage(extended_sequence, responses)
+    #TCL computing 
+    seq_coverage = extract_seq_coverage(extended_sequence, responses, spec_info)
+    tcl_score = calculate_tcl_score(seq_coverage, spec_info)
     for k in cumulative_coverage:
         cumulative_coverage[k].update(seq_coverage.get(k, set()))
-
 
     # Feedback: diversity
     diversity, new_fields = CALCULATE_DIVERSITY(last_response, seen_fields)
     seen_fields.update(new_fields)
 
-    # Feedback: coverage
-    seq_coverage = extract_seq_coverage(extended_sequence, responses)
-    tcl_score = calculate_tcl_score(seq_coverage, spec_info)
     if DEBUG: 
         print_tcl_breakdown(seq_coverage, spec_info)
 
@@ -277,8 +271,9 @@ while time.time() - start_time < MAX_TIME_SECONDS:
     i+=1
 
 print("\n🏁 Stateful fuzzing complete.")
-final_score = calculate_tcl_score(cumulative_coverage, spec_info)
-print(f"\n✅ Final Cumulative TCL Score: {final_score:.2f}")
 response_analyzer.write_bug_report("text")
 response_analyzer.write_bug_report("json")
 print(f"\n🐞 Grouped bug report saved to: {response_analyzer.bug_log_path}")
+final_score = total_TCL_score(cumulative_coverage, spec_info, response_analyzer.bug_log_path)
+print(f"\n✅ Final Cumulative TCL Score: {final_score:.2f}")
+print_tcl_breakdown(cumulative_coverage, spec_info)
