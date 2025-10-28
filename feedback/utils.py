@@ -50,10 +50,10 @@ def print_tcl_breakdown(seq_coverage: Dict[str, Set], spec_info: Dict[str, Set])
     fields = [
         "paths",
         "operations",
-        "parameters",
+        "input_content_types",
         "status_codes",
-        "response_fields",
-        "input_content_types"
+        "parameters",
+        "response_fields"
     ]
 
     for field in fields:

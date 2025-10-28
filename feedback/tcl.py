@@ -26,38 +26,43 @@ def extract_seq_coverage(requests: List[Dict], responses: List[Dict], spec_info:
         url = req["url"].split("?")[0]
         method = req["method"]
 
-        # Count paths
+        # List paths
         normalized_path = match_paths_with_dependencies({url},all_paths)
         coverage["paths"].update(normalized_path)
 
-        # Count operations
+        # List operations
         normalized_ops = match_operations_with_dependencies({(method,url)},all_ops)
         coverage["operations"].update((normalized_ops))
 
-        # Parameters from headers and body
-        if req.get("headers"):
-            coverage["parameters"].update(req["headers"].keys())
+        # Parameters from body
         if req.get("body") and isinstance(req["body"], dict):
             coverage["parameters"].update(req["body"].keys())
 
         # Content-Type used
-        if req.get("body"):
-            ctype = req.get("headers", {}).get("Content-Type")
-            if ctype:
-                for norm_op in normalized_ops:
-                    coverage["input_content_types"].add((norm_op, ctype))
+        ctype = req.get("headers", {}).get("Content-Type", "application/json")
+        for norm_op in normalized_ops:
+            coverage["input_content_types"].add((norm_op, ctype))
 
     for resp in responses:
         coverage["status_codes"].add(str(resp["status"]))
         try:
-            body = json.loads(resp["body"])
+            body = json.loads(resp.get("body", "{}"))
             if isinstance(body, dict):
-                coverage["response_fields"].update(body.keys())
+                def collect_fields_from_body(b):
+                    fields = set()
+                    if isinstance(b, dict):
+                        for k, v in b.items():
+                            fields.add(k)
+                            fields.update(collect_fields_from_body(v))
+                    elif isinstance(b, list):
+                        for item in b:
+                            fields.update(collect_fields_from_body(item))
+                    return fields
+                coverage["response_fields"].update(collect_fields_from_body(body))
         except Exception:
             continue
 
     return coverage
-
 
 def calculate_tcl_score(seq_coverage: Dict[str, Set], spec_info: Dict[str, Set]) -> float:
     """

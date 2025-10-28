@@ -143,15 +143,19 @@ class OpenAPIParser:
         status_codes = set()
         response_fields = set()
         input_content_types = set()
-        response_expectations = set()  
 
         for ep in self.endpoints:
+            # list paths
             paths.add(ep.path)
+            
+            #list operations
             operations.add((ep.method, ep.path))
 
+            '''
             for p in ep.parameters:
                 parameters.add(p["name"])
-
+            '''
+            # include body parameters (input)
             if ep.request_body:
                 for name in ep.request_body.get("properties", {}).keys():
                     parameters.add(name)
@@ -163,28 +167,39 @@ class OpenAPIParser:
                         input_content_types.add((ep.method, ep.path, ctype))
 
             elif self.version == '2.0':
-                input_content_types.add((ep.method, ep.path, "application/json"))
+                input_content_types.add(((ep.method, ep.path), "application/json"))
 
+            #list status codes and response fields
             if "responses" in ep.raw:
                 for code, resp in ep.raw["responses"].items():
+                    # Track expected status codes
                     status_codes.add(str(code))
-                    content = resp.get("content", {})
-                    schema = content.get("application/json", {}).get("schema", {})
 
-                    if not schema and self.version == '2.0':
-                        schema = resp.get("schema", {})
+                    # Resolve schema
+                    schema = None
+                    if self.version == '3':
+                        content = resp.get("content", {})
+                        json_schema = content.get("application/json", {}).get("schema", {})
+                        schema = self._resolve_schema(json_schema) if json_schema else None
+                    elif self.version == '2.0':
+                        schema = self._resolve_schema(resp.get("schema", {})) if resp.get("schema") else None
 
-                    if "$ref" in schema:
-                        schema = self._resolve_ref(schema["$ref"])
-
+                    #track response params
+                    def collect_fields(s):
+                        fields = set()
+                        if "properties" in s and isinstance(s["properties"], dict):
+                            for k, v in s["properties"].items():
+                                fields.add(k)
+                                fields.update(collect_fields(v))
+                        if "items" in s:
+                            fields.update(collect_fields(s["items"]))
+                        for comb in ["allOf", "anyOf", "oneOf"]:
+                            if comb in s:
+                                for subschema in s[comb]:
+                                    fields.update(collect_fields(subschema))
+                        return fields
                     if schema:
-                        fields = schema.get("properties", {})
-                        for name in fields:
-                            response_fields.add(name)
-
-                    #track body-expecting responses
-                    if schema or ("content" in resp and resp["content"]):
-                        response_expectations.add((ep.method, ep.path, str(code)))
+                        response_fields.update(collect_fields(schema))
 
         return {
             "paths": paths,
@@ -192,11 +207,9 @@ class OpenAPIParser:
             "parameters": parameters,
             "status_codes": status_codes,
             "response_fields": response_fields,
-            "input_content_types": input_content_types,
-            "response_fields": response_expectations, 
+            "input_content_types": input_content_types, 
         }
-
-
+    
     def _extract_request_body_v3(self, op_obj: Dict) -> Optional[Dict]:
         content = op_obj.get("requestBody", {}).get("content", {})
         app_json = content.get("application/json", {})
