@@ -172,6 +172,9 @@ while time.time() - start_time < MAX_TIME_SECONDS:
             
             extended_sequence = base_test["sequence"] + [resolved_request]
             no_comp_count = 0
+
+            sig = sequence_signature(extended_sequence, endpoints)
+            new_signature = sig not in seen_signatures
     
         except RuntimeError as e:
             no_comp_count +=1
@@ -197,11 +200,9 @@ while time.time() - start_time < MAX_TIME_SECONDS:
     else:
         # MUTATION MODE: mutate entire sequence
         extended_sequence = deep_mutation(base_test["sequence"], endpoints)
+        new_signature = True
 
-
-    sig = sequence_signature(extended_sequence, endpoints)
-    new_signature = sig not in seen_signatures
-
+    '''
     # Run mutation mode trigger logic 
     if not mutation_mode:
         current_total_score = calculate_tcl_score(cumulative_coverage, spec_info)
@@ -228,44 +229,57 @@ while time.time() - start_time < MAX_TIME_SECONDS:
                         """)
                 print(f"\n🔄 Entering MUTATION MODE after {i+1} iterations (stagnation for {STAGNATION_WINDOW})")
                 continue
+    '''
 
-    dprint(f"📤 Sending sequence: {[req['method'] + ' ' + req['url'] for req in extended_sequence]}")
-    responses = send_sequence(extended_sequence, BASE_URL, auth_handler=auth_handler)
-    last_response = responses[-1]
+    if new_signature:
+        dprint(f"📤 Sending sequence: {[req['method'] + ' ' + req['url'] for req in extended_sequence]}")
+        responses = send_sequence(extended_sequence, BASE_URL, auth_handler=auth_handler)
+        last_response = responses[-1]
 
-    # Producing log file
-    log_iteration_debug(i + 1, extended_sequence, responses, timestamp_prefix=timestamp_prefix)
+        # Producing log file
+        log_iteration_debug(i + 1, extended_sequence, responses, timestamp_prefix=timestamp_prefix)
 
-    #Response analysis for bugs
-    response_analyzer.analyze(extended_sequence[-1], responses[-1])
+        # Response analysis for bugs
+        response_analyzer.analyze(extended_sequence[-1], responses[-1])
 
-    #TCL computing 
-    seq_coverage = extract_seq_coverage(extended_sequence, responses, spec_info)
-    tcl_score = calculate_tcl_score(seq_coverage, spec_info)
-    for k in cumulative_coverage:
-        cumulative_coverage[k].update(seq_coverage.get(k, set()))
+        # Update ID table
+        new_ids = EXTRACT_IDS(last_response["body"], param_names)
+        for k, v in new_ids.items():
+            dynamic_id_table.setdefault(k, [])
+            for val in v:
+                if val not in dynamic_id_table[k]:
+                    dynamic_id_table[k].append(val)
+        
+        # TCL computing 
+        seq_coverage = extract_seq_coverage(extended_sequence, responses, spec_info)
+        tcl_score = calculate_tcl_score(seq_coverage, spec_info)
+        for k in cumulative_coverage:
+            cumulative_coverage[k].update(seq_coverage.get(k, set()))
 
-    # Feedback: diversity
-    diversity, new_fields = CALCULATE_DIVERSITY(last_response, seen_fields)
-    seen_fields.update(new_fields)
+        # Feedback: diversity
+        diversity, new_fields = CALCULATE_DIVERSITY(last_response, seen_fields)
+        seen_fields.update(new_fields)
 
-    if DEBUG: 
-        print_tcl_breakdown(seq_coverage, spec_info)
+        if DEBUG: 
+            print_tcl_breakdown(seq_coverage, spec_info)
 
-    # Update ID table
-    new_ids = EXTRACT_IDS(last_response["body"], param_names)
-    for k, v in new_ids.items():
-        dynamic_id_table.setdefault(k, [])
-        for val in v:
-            if val not in dynamic_id_table[k]:
-                dynamic_id_table[k].append(val)
+        corpus.append({
+            "sequence": extended_sequence,
+            "responses": responses,
+            "diversity": diversity,
+            "tcl": tcl_score
+        })
 
-    corpus.append({
-        "sequence": extended_sequence,
-        "responses": responses,
-        "diversity": diversity,
-        "tcl": tcl_score
-    })
+    # Run TCL based mutation mode trigger logic
+    if not mutation_mode:
+        current_score = total_TCL_score(cumulative_coverage, spec_info, response_analyzer.bug_log_path)
+        if current_score >= 2:
+            mutation_mode = True
+            print(r"""
+                    🚨 ENTERING MUTATION MODE 🚨
+                    Exploration has stagnated — fuzzing with mutations only.
+                    """)
+            print(f"\n🔄 Entering MUTATION MODE after {i+1} iterations")
 
     dprint(f"📈 TCL: {tcl_score:.2f}, Diversity: {diversity:.2f}, Total Corpus: {len(corpus)}")
     i+=1
