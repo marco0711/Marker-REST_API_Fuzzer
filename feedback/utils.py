@@ -1,5 +1,23 @@
 import re
 from typing import Set, Dict, Tuple
+from urllib.parse import urlparse
+
+def deduplicate_url(url: str, paths: Set[str]) -> str:
+        """
+        Normalizes a URL using the spec-defined paths.
+        - Keeps only the path part (drops scheme, host, query)
+        - Replaces dynamic path params by matching them to known spec paths
+        """
+         # Try to find a matching spec path
+        for spec_path in paths:
+            if match_path(url, spec_path):
+                # Found a canonical match → return the spec pattern
+                return spec_path
+        print("ERROR: no match found")
+
+def normalize_url(url: str) -> str: 
+    parsed = urlparse(url) 
+    return parsed.path or url
 
 def match_path(concrete: str, spec: str) -> bool:
     """

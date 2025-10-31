@@ -1,7 +1,7 @@
 import json
 import os
-from typing import Dict, List, Optional
-from urllib.parse import urlparse
+from typing import Dict, Optional
+from feedback.utils import normalize_url, deduplicate_url
 
 class ResponseAnalyzer:
     def __init__(self, spec_info: Dict, timestamp_prefix: Optional[str] = None, output_path: Optional[str] = None):
@@ -70,17 +70,12 @@ class ResponseAnalyzer:
             "request": request,
             "response": response
         })
-
+    
     def write_bug_report(self, type: str = "text"):
         """
         Write bug report in either text or JSON format, removing duplicates.
         :param type: "text" (default, human-readable) or "json" (machine-readable).
         """
-
-        # Helper: normalize URLs to remove host/scheme
-        def normalize_url(url: str) -> str:
-            parsed = urlparse(url)
-            return parsed.path or url
 
         # Deduplicate: build a set of unique bug signatures
         unique_bugs = {}
@@ -91,7 +86,7 @@ class ResponseAnalyzer:
                 req = entry.get("request", {})
                 resp = entry.get("response", {})
                 method = req.get("method", "")
-                url = normalize_url(req.get("url", ""))
+                url = deduplicate_url(req.get("url", ""), self.spec_info["paths"])
                 status = str(resp.get("status") or resp.get("status_code"))
                 reason = entry.get("reason", "")
                 signature = f"{category}|{method}|{url}|{status}|{reason}"
