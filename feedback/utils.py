@@ -54,6 +54,31 @@ def match_operations_with_dependencies(actual_ops: Set[Tuple[str, str]], spec_op
                 matched.add((spec_method, spec_path))
     return matched
 
+def collect_nested_fields(data: dict) -> set:
+    """
+    Recursively collect all field names (keys) from a nested JSON-like structure.
+    This is useful for extracting parameter names from request or response bodies.
+    """
+    fields = set()
+
+    if not isinstance(data, dict):
+        return fields
+
+    for key, value in data.items():
+        # Add the current key
+        fields.add(key)
+
+        # Recurse into nested dicts
+        if isinstance(value, dict):
+            fields.update(collect_nested_fields(value))
+
+        # Recurse into lists of dicts
+        elif isinstance(value, list):
+            for item in value:
+                if isinstance(item, dict):
+                    fields.update(collect_nested_fields(item))
+
+    return fields
 
 
 def print_tcl_breakdown(seq_coverage: Dict[str, Set], spec_info: Dict[str, Set]) -> None:
@@ -90,11 +115,13 @@ def print_tcl_breakdown(seq_coverage: Dict[str, Set], spec_info: Dict[str, Set])
             matched = covered & total
 
         partial_score = len(matched) / len(total)
-
+        missing = total - matched
+        
         # Print section
         print(f"\n🧩 {field}:")
         print(f"   • Expected: {len(total)} → {total}")
         print(f"   • Covered : {len(covered)} → {covered}")
         print(f"   • Matched : {len(matched)} → {matched}")
+        print(f"   • Missing : {len(missing)} → {missing}")
         print(f"   • Partial Score: {partial_score:.2f}")
 

@@ -1,17 +1,18 @@
 import json
 import yaml
 import requests
-from typing import Dict, List, Any, Optional, Set
+from typing import Dict, List, Optional, Set
 
 
 class Endpoint:
-    def __init__(self, path: str, method: str, parameters: List[Dict], request_body: Optional[Dict], responses: Dict, raw: Optional[Dict] = None):
+    def __init__(self, path: str, method: str, parameters: List[Dict], request_body: Optional[Dict], responses: Dict, raw: Optional[Dict] = None, root_spec: Optional[Dict] = None):
         self.path = path
         self.method = method.upper()
         self.parameters = parameters
         self.request_body = request_body
         self.responses = responses
         self.raw = raw
+        self.root_spec = root_spec 
 
         self.path_params = [p for p in parameters if p.get("in") == "path"]
         self.query_params = [p for p in parameters if p.get("in") == "query"]
@@ -108,6 +109,33 @@ class OpenAPIParser:
         except Exception as e:
             print("❌ Authentication error:", e)
 
+    def collect_body_fields(self, schema: dict) -> Set[str]:
+        """Recursively collect all field names from a requestBody schema."""
+        fields = set()
+        if "properties" in schema:
+            for name, subschema in schema["properties"].items():
+                fields.add(name)
+                fields.update(self.collect_body_fields(subschema))
+        if "items" in schema:
+            fields.update(self.collect_body_fields(schema["items"]))
+        for comb in ["allOf", "anyOf", "oneOf"]:
+            if comb in schema:
+                for s in schema[comb]:
+                    fields.update(self.collect_body_fields(s))
+        if "$ref" in schema:
+            resolved = self._resolve_ref(self.spec, schema["$ref"])
+            if resolved:
+                fields.update(self.collect_body_fields(resolved))
+        return fields
+    
+    def _resolve_ref(self, obj, ref: str) -> Optional[Dict]:
+        parts = ref.lstrip("#/").split("/")
+        for part in parts:
+            obj = obj.get(part)
+            if obj is None:
+                return None
+        return obj
+    
     def parse(self) -> List[Endpoint]:
         if self.endpoints:
             return self.endpoints
@@ -132,7 +160,8 @@ class OpenAPIParser:
                     parameters=parameters,
                     request_body=request_body,
                     responses=responses,
-                    raw=op_obj
+                    raw=op_obj,
+                    root_spec=self.spec 
                 ))
         return self.endpoints
     
@@ -145,21 +174,14 @@ class OpenAPIParser:
         input_content_types = set()
 
         for ep in self.endpoints:
-            # list paths
+
+        # ============================== (TCL1) List paths (TCL1) ==============================
             paths.add(ep.path)
             
-            #list operations
+        # ============================ (TCL2) List operations (TCL2) ============================
             operations.add((ep.method, ep.path))
 
-            '''
-            for p in ep.parameters:
-                parameters.add(p["name"])
-            '''
-            # include body parameters (input)
-            if ep.request_body:
-                for name in ep.request_body.get("properties", {}).keys():
-                    parameters.add(name)
-
+        # ==================== (TCL3) Collect input content types (TCL3) ====================
             if self.version == '3':
                 if ep.raw.get("requestBody"):
                     content = ep.raw["requestBody"].get("content", {})
@@ -169,7 +191,28 @@ class OpenAPIParser:
             elif self.version == '2.0':
                 input_content_types.add(((ep.method, ep.path), "application/json"))
 
-            #list status codes and response fields
+        # ================ (TCL4) Collect path, query, and header params (TCL4) =================
+            for p in ep.parameters:
+                loc = p.get("in")
+                if loc in ["path", "query", "header"]:
+                    parameters.add(p["name"])
+           
+            # Include body parameters 
+            if self.version == "3":
+                if ep.request_body:
+                    schema = ep.request_body.get("content", {}).get("application/json", {}).get("schema", {})
+                    if schema:
+                        parameters.update(self.collect_body_fields(schema))
+
+            elif self.version == "2.0":
+                # In OpenAPI v2, body parameters are listed in 'parameters' with "in": "body"
+                for p in ep.raw.get("parameters", []):
+                    if p.get("in") == "body" and "schema" in p:
+                        schema = p["schema"]
+                        if schema:
+                            parameters.update(self.collect_body_fields(schema))
+
+        # ================= (TCL5-6) list status codes and response fields (TCL5-6) =================
             if "responses" in ep.raw:
                 for code, resp in ep.raw["responses"].items():
                     # Track expected status codes
@@ -240,7 +283,7 @@ class OpenAPIParser:
         parsed_responses = {}
         for status_code, response_obj in responses.items():
             if "$ref" in response_obj:
-                response_obj = self._resolve_ref(response_obj["$ref"])
+                response_obj = self._resolve_ref(self.spec, response_obj["$ref"])
             description = response_obj.get("description", "")
             content = response_obj.get("content", {})
             parsed_content = {}
@@ -260,7 +303,7 @@ class OpenAPIParser:
         for status_code, response_obj in responses.items():
             # Resolve top-level $ref on the response object itself
             if "$ref" in response_obj:
-                response_obj = self._resolve_ref(response_obj["$ref"])
+                response_obj = self._resolve_ref(self.spec, response_obj["$ref"])
 
             description = response_obj.get("description", "")
             schema = response_obj.get("schema", {})
@@ -274,16 +317,6 @@ class OpenAPIParser:
             }
 
         return parsed_responses
-
-
-    def _resolve_ref(self, ref: str) -> Optional[Dict]:
-        parts = ref.lstrip("#/").split("/")
-        obj = self.spec
-        for part in parts:
-            obj = obj.get(part)
-            if obj is None:
-                return None
-        return obj
     
     def _resolve_schema(self, schema: Dict, seen_refs: Optional[Set[str]] = None) -> Dict:
         if not isinstance(schema, dict):
@@ -298,7 +331,7 @@ class OpenAPIParser:
             if ref in seen_refs:
                 return {}  # Prevent infinite recursion
             seen_refs.add(ref)
-            resolved = self._resolve_ref(ref)
+            resolved = self._resolve_ref(self.spec, ref)
             return self._resolve_schema(resolved, seen_refs)
 
         # Recursively resolve properties

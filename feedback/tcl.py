@@ -2,7 +2,7 @@ import json
 import os
 import re
 from typing import Any, Dict, List, Set, Tuple
-from feedback.utils import match_paths_with_dependencies, match_operations_with_dependencies
+from feedback.utils import match_paths_with_dependencies, match_operations_with_dependencies, collect_nested_fields
 
 def extract_seq_coverage(requests: List[Dict], responses: List[Dict], spec_info: Dict[str, Set]) -> Dict[str, Set]:
     """
@@ -26,22 +26,43 @@ def extract_seq_coverage(requests: List[Dict], responses: List[Dict], spec_info:
         url = req["url"].split("?")[0]
         method = req["method"]
 
-        # List paths
+    # ============================== (TCL1) List paths (TCL1) ==============================
+
         normalized_path = match_paths_with_dependencies({url},all_paths)
         coverage["paths"].update(normalized_path)
 
-        # List operations
+    # ============================ (TCL2) List operations (TCL2) ============================
         normalized_ops = match_operations_with_dependencies({(method,url)},all_ops)
         coverage["operations"].update((normalized_ops))
 
-        # Parameters from body
-        if req.get("body") and isinstance(req["body"], dict):
-            coverage["parameters"].update(req["body"].keys())
-
-        # Content-Type used
+    # ==================== (TCL3) Collect input content types (TCL3) ====================
         ctype = req.get("headers", {}).get("Content-Type", "application/json")
         for norm_op in normalized_ops:
             coverage["input_content_types"].add((norm_op, ctype))
+
+    # ================ (TCL4) Collect path, query, and header params (TCL4) =================
+        # Query params
+        uri = req["url"]
+        query_params = {}
+        if "?" in uri:
+            query_part = uri.split("?")[1]
+            query_params = dict(q.split("=") for q in query_part.split("&") if "=" in q)
+        coverage["parameters"].update(query_params.keys())
+
+        # Identify used path parameters by matching to spec
+        for path in normalized_path:
+            path_params = re.findall(r"\{(.*?)\}", path)
+            coverage["parameters"].update(path_params)
+
+        # Header params
+        if req.get("headers"):
+            coverage["parameters"].update(req["headers"].keys())
+
+        # Body params
+        if req.get("body") and isinstance(req["body"], dict):
+            coverage["parameters"].update(collect_nested_fields(req["body"]))
+
+    # ================= (TCL5-6) List status codes and response fields (TCL5-6) =================
 
     for resp in responses:
         coverage["status_codes"].add(str(resp["status"]))
@@ -136,9 +157,11 @@ def total_TCL_score(cumulative_coverage: dict, spec_info: dict, output_file: str
             score += 1
             continue
 
-        coverage_ratio = len(covered) / len(total)
+        matched = total & covered
+        coverage_ratio = len(matched) / len(total)
         detailed_results[field] = {
             "covered": len(covered),
+            "matched": len(matched),
             "total": len(total),
             "coverage": round(coverage_ratio, 3)
         }
@@ -155,9 +178,11 @@ def total_TCL_score(cumulative_coverage: dict, spec_info: dict, output_file: str
         for field, label in levels[stop_index:]:
             covered = cumulative_coverage.get(field, set())
             total = spec_info.get(field, set())
-            ratio = round(len(covered) / len(total), 3) if total else 1.0
+            matched = total & covered
+            ratio = round(len(matched) / len(total), 3) if total else 1.0
             detailed_results[field] = {
                 "covered": len(covered) if total else 0,
+                "matched": len(matched) if total else 0,
                 "total": len(total) if total else 0,
                 "coverage": ratio
             }
