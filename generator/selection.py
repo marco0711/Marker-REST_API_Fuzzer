@@ -10,7 +10,7 @@ BETA = 0  # weight for Diversity
 MAX_SEQUENCE_LENGTH = 8  # Do not extend tests longer than this
 LENGTH_WEIGHT = 0.3
 
-def SELECT_TEST(corpus: list) -> dict:
+def SELECT_TEST(corpus: list, mutation_mode) -> dict:
     """
     Selects a test sequence from the corpus using an ε-greedy strategy:
     - 80% of the time: weighted selection based on score.
@@ -34,6 +34,10 @@ def SELECT_TEST(corpus: list) -> dict:
             tcl = entry.get("tcl", 0.0)
             diversity = entry.get("diversity", 0.0)
             length_penalty = LENGTH_WEIGHT * len(entry["sequence"])
+            if mutation_mode:
+                BETA = 1
+            else:
+                BETA = 0.5
             score = tcl * ALPHA + diversity * BETA - length_penalty
             scores.append(max(score, 0.01))  # Avoid zero probability
 

@@ -17,9 +17,9 @@ from utils.utils import sequence_signature
 
 # === Config from CLI ===
 cli = argparse.ArgumentParser(description="Run Marker-REST_API_Fuzzer")
-cli.add_argument("--spec", type=str, default="examples/target-ncs.json",
+cli.add_argument("--spec", type=str, default="examples/target-petclinic.json",
                     help="Path to OpenAPI specification (JSON/YAML)")
-cli.add_argument("--target", type=str, default="http://localhost:8080",
+cli.add_argument("--target", type=str, default="http://localhost:8080/petclinic",
                     help="Base URL of the target service")
 cli.add_argument("--time", type=int, default=300,
                     help="Maximum fuzzing time in seconds")
@@ -122,6 +122,7 @@ for ep in seed_endpoints:
     # Diversity feedback
     diversity, new_fields = CALCULATE_DIVERSITY(last_response, seen_fields)
     seen_fields.update(new_fields)
+    diversity = 0   # override diversity to 0 for seed initialization 
 
     # Extract dynamic IDs
     new_ids = EXTRACT_IDS(last_response["body"], param_names)
@@ -150,7 +151,7 @@ while time.time() - start_time < MAX_TIME_SECONDS:
     new_signature = False
     
     try:
-        base_test = SELECT_TEST(corpus)
+        base_test = SELECT_TEST(corpus, mutation_mode)
     except ValueError as e:
         print("❌ No tests to select:", e)
         break
@@ -277,7 +278,7 @@ while time.time() - start_time < MAX_TIME_SECONDS:
     # Run TCL based mutation mode trigger logic
     if not mutation_mode:
         current_score = total_TCL_score(cumulative_coverage, spec_info)
-        if current_score >= 2:
+        if current_score >= 3:
             mutation_mode = True
             print(r"""
                     🚨 ENTERING MUTATION MODE 🚨
@@ -294,5 +295,5 @@ response_analyzer.write_bug_report("json")
 print(f"\n🐞 Grouped bug report saved to: {response_analyzer.bug_log_path}")
 final_score = total_TCL_score(cumulative_coverage, spec_info, response_analyzer.bug_log_path)
 print(f"\n✅ Final Cumulative TCL Score: {final_score:.2f}")
-if DEBUG:
-    print_tcl_breakdown(cumulative_coverage, spec_info)
+#if DEBUG:
+print_tcl_breakdown(cumulative_coverage, spec_info)
