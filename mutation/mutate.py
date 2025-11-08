@@ -5,7 +5,7 @@ import copy
 from copy import deepcopy
 from typing import Dict, List, Any
 from generator.request import generate_example_value
-from mutation.utils import find_endpoint_by_request
+from mutation.utils import find_endpoint_by_request, resolve_ref
 
 # =====> Config <=======
 MUTATE_EXISTING_PROB = 0.3   # chance to mutate an existing field
@@ -83,82 +83,75 @@ def mutate_value(value):
 def random_string(length):
     return ''.join(random.choices(string.ascii_letters + string.digits, k=length))
 
-def deep_mutation_old(sequence: list, endpoints: list) -> list:
+def deep_mutation(sequence: list, endpoints: list) -> list:
     """
     Apply deep mutations to a full sequence of requests.
-    Mutations include:
-      - Adding optional fields to JSON body
-      - Edge-case values for numeric/string fields
-      - Wrong types for fuzzing
-    Headers are not mutated.
-    
-    Returns a new mutated sequence.
+
+      - Add optional fields.
+      - Mutate existing fields probabilistically using `mutate_bad_value`.
+      - Use schema information to pick sensible fuzz values (via generate_fuzz_value).
+      - Keep headers unchanged.
+
+    Returns a new mutated sequence (deep-copied).
     """
     mutated_sequence = []
 
     for req in sequence:
-        # Copy original request
-        mutated_req = copy.deepcopy(req)
         ep = find_endpoint_by_request(req, endpoints)
 
-        if not ep or not ep.request_body:
-            mutated_sequence.append(mutated_req)
+        # If there is no endpoint keep unchanged
+        if not ep:
+            mutated_sequence.append(req)
+            print(f"DEEP MUTATION ERROR, no ep found for: {req}")
             continue
-
-        try:
-            original_body = json.loads(mutated_req.get("body", "{}"))
-        except Exception:
-            mutated_sequence.append(mutated_req)
-            continue
-
-        schema = ep.request_body.get("content", {}).get("application/json", {}).get("schema", {})
-        if not schema or schema.get("type") != "object":
-            mutated_sequence.append(mutated_req)
-            continue
-
-        properties = schema.get("properties", {})
-        required_fields = schema.get("required", [])
-
-        # Add optional fields not present
-        for field, field_schema in properties.items():
-            if field not in original_body:
-                if field not in required_fields:
-                    original_body[field] = generate_fuzz_value(field_schema)
-        '''
         
-        # Mutate existing and newly added fields with random (wrong) value
-        for field, value in original_body.items():
-            field_schema = properties.get(field, {})
-            original_body[field] = mutate_value(value, field_schema)
-        '''
+        # Get request body properties
+        if ep.request_body:
+            schema = ep.request_body
+            props = schema.get("properties", {})
+            body = {}
+        else:
+            mutated_sequence.append(req)
+            print(f"WARNING: No request body found for endpoint: {ep.path} skipping mutation")
+            continue
 
-        # Reassign mutated body
-        mutated_req["body"] = json.dumps(original_body)
-        mutated_sequence.append(mutated_req)
-        
+        # === Populate every field except readOnly
+        for name, definition in props.items():
+            # Resolve $ref if present
+            if "$ref" in definition:
+                definition = resolve_ref(definition, ep.root_spec)
+
+            print(f"Populating field: {name} → {definition}")
+
+            if definition.get("readOnly", False):
+                continue  # Skip read-only fields
+            
+            try:
+                # Always generate a base fuzzing value
+                value = generate_fuzz_value(definition)
+
+                # Occasionally mutate it further
+                if random.random() < MUTATE_EXISTING_PROB:
+                    value = mutate_bad_value(value, definition)
+
+                body[name] = value
+            except Exception as e:
+                print(f"⚠️ Error generating fuzz value for field '{name}' in {ep.path}: {e}")
+
+        # Copy original request
+        mut_req = copy.deepcopy(req)
+        print(f"original req: {mut_req}")
+
+        mut_req["body"] = body
+        mutated_sequence.append(mut_req) 
+
+        print(f"✅ Mutated request for {ep.method} {ep.path}: {list(body.keys())}")
     return mutated_sequence
 
 
-def generate_fuzz_value_old(schema: dict):
-    """Generate a synthetic value for an optional field based on its schema."""
-    typ = schema.get("type")
-    if typ == "string":
-        return random.choice(["", "a" * 1000, "💥💥💥", "\x00", "null", "1234"])
-    elif typ == "integer":
-        return random.choice([-1, 0, 1, 2**31 - 1, -2**31])
-    elif typ == "number":
-        return random.choice([-1.0, 0.0, 3.14159, float("inf"), float("-inf")])
-    elif typ == "boolean":
-        return random.choice([True, False])
-    elif typ == "array":
-        return []
-    elif typ == "object":
-        return {}
-    else:
-        return "fuzz"  # fallback
 
 
-def deep_mutation(sequence: list, endpoints: list) -> list:
+def deep_mutation_old(sequence: list, endpoints: list) -> list:
     """
     Apply deep mutations to a full sequence of requests.
 
@@ -175,50 +168,138 @@ def deep_mutation(sequence: list, endpoints: list) -> list:
         mutated_req = copy.deepcopy(req)
         ep = find_endpoint_by_request(req, endpoints)
 
-        # If there is no endpoint or request body, keep unchanged
-        if not ep or not ep.request_body:
+        # If there is no endpoint keep unchanged
+        if not ep:
+            mutated_sequence.append(mutated_req)
+            print(f"UNCHANGED, no ep found: {mutated_req}")
+            continue
+
+        # Parse body safely
+        body_data = mutated_req.get("body", {})
+        if isinstance(body_data, str):
+            try:
+                original_body = json.loads(body_data or "{}")
+            except Exception as e:
+                print(f"ERROR parsing body JSON: {e}")
+                mutated_sequence.append(mutated_req)
+                continue
+        elif isinstance(body_data, dict):
+            original_body = copy.deepcopy(body_data)
+        else:
+            original_body = {}
+
+        schema = {}
+        if ep.request_body:
+            schema = ep.request_body.get("content", {}).get("application/json", {}).get("schema", {})
+        # Fallback for OpenAPI v2 body schemas
+        elif ep.raw.get("parameters"):
+            for p in ep.raw["parameters"]:
+                if p.get("in") == "body" and "schema" in p:
+                    schema = p["schema"]
+                    break
+
+        # Do not apply mutation to endpoints with no schema
+        if not schema:
             mutated_sequence.append(mutated_req)
             continue
 
-        # Safely parse JSON body (if any)
-        try:
-            original_body = json.loads(mutated_req.get("body", "{}") or "{}")
-        except Exception:
-            mutated_sequence.append(mutated_req)
-            continue
+        # Resolve $ref if needed
+        if "$ref" in schema:
+            schema = resolve_ref(schema["$ref"], ep.root_spec)
 
-        schema = ep.request_body.get("content", {}).get("application/json", {}).get("schema", {})
+
+        # Recursive population and mutation
+        original_body = mutate_body_by_schema(original_body, schema, ep.root_spec)
+        '''
         if not schema or schema.get("type") != "object":
             mutated_sequence.append(mutated_req)
+            print("SCHEMA NOT FOUND")
             continue
 
         properties = schema.get("properties", {})
         required_fields = schema.get("required", [])
 
         # 1) Add optional fields not present (using schema-aware generator)
+
         for field, field_schema in properties.items():
             if field not in original_body and field not in required_fields:
-                original_body[field] = generate_fuzz_value(field_schema)
+                try:
+                    original_body[field] = generate_fuzz_value(field_schema)
+                except Exception as e:
+                    print(f"ERROR: Couldn't generate fuzz value during deep mutation: {e}")    
 
         # 2) Mutate existing fields probabilistically
         for field, value in list(original_body.items()):
-            # Skip mutation for newly added optional fields with small probability?
             # Apply mutation with MUTATE_EXISTING_PROB
             if random.random() < MUTATE_EXISTING_PROB:
                 field_schema = properties.get(field, {})
                 original_body[field] = mutate_bad_value(value, field_schema)
-
-        # Reassign mutated body
+        '''
+        # Serialize safely
         try:
             mutated_req["body"] = json.dumps(original_body)
-        except Exception:
-            # fallback: keep original body if serialization fails
-            mutated_req["body"] = req.get("body", "{}")
+        except Exception as e:
+            print(f"ERROR serializing mutated body: {e}")
+            mutated_req["body"] = json.dumps(original_body, default=str)
 
         mutated_sequence.append(mutated_req)
+        print(f"✅ Mutated: {ep.method} {ep.path} → {list(original_body.keys())}")
 
     return mutated_sequence
 
+def mutate_body_by_schema(original_body, schema, root_spec):
+    """
+    Recursively mutate or populate a JSON body according to a given schema.
+    Supports objects, arrays, and primitive types.
+    """
+    if "$ref" in schema:
+        schema = resolve_ref(schema, root_spec)
+
+    # Resolve object schemas
+    if schema.get("type") == "object" or "properties" in schema:
+        if not isinstance(original_body, dict):
+            original_body = {}
+
+        props = schema.get("properties", {})
+        required_fields = schema.get("required", [])
+
+        # Add missing fields
+        for field, subschema in props.items():
+            if field not in original_body:
+                original_body[field] = generate_fuzz_value(subschema)
+
+        # Mutate existing fields recursively
+        for field, value in list(original_body.items()):
+            if random.random() < MUTATE_EXISTING_PROB:
+                subschema = props.get(field, {})
+                original_body[field] = mutate_bad_value(value, subschema)
+            elif field in props:
+                # Recurse into nested structure
+                original_body[field] = mutate_body_by_schema(original_body[field], props[field], root_spec)
+
+        return original_body
+
+    # Resolve array schemas
+    elif schema.get("type") == "array" and "items" in schema:
+        if not isinstance(original_body, list):
+            original_body = []
+        if not original_body:
+            # Add one element
+            original_body.append(generate_fuzz_value(schema["items"]))
+        else:
+            # Mutate existing elements
+            for i, elem in enumerate(original_body):
+                if random.random() < MUTATE_EXISTING_PROB:
+                    original_body[i] = mutate_bad_value(elem, schema["items"])
+                else:
+                    original_body[i] = mutate_body_by_schema(elem, schema["items"], root_spec)
+        return original_body
+
+    # Fallback for primitives (string, number, boolean, etc.)
+    else:
+        if random.random() < MUTATE_EXISTING_PROB:
+            return mutate_bad_value(original_body, schema)
+        return original_body
 
 def generate_fuzz_value(schema: Dict[str, Any]):
     """
@@ -226,6 +307,7 @@ def generate_fuzz_value(schema: Dict[str, Any]):
     This returns *aggressive* edge-case values.
     """
     if not isinstance(schema, dict):
+        print("ERROR: no schema in generate_fuzz_value")
         return "fuzz"
 
     typ = schema.get("type")
@@ -334,6 +416,7 @@ def generate_fuzz_value(schema: Dict[str, Any]):
         return obj
 
     # fallback: return varied tokens (keeps as string)
+    print("FALLBACK for generate_fuzz_value")
     return random.choice(["fuzz", "NULL", "null", None, "1234", "{}"])
 
 
@@ -389,4 +472,5 @@ def mutate_bad_value(value: Any, schema: Dict[str, Any]):
             return generate_fuzz_value({"type": "object"})
 
     # fallback: use generic fuzz value
+    print("FALLBACK for mutate_bad_value")
     return generate_fuzz_value({})
