@@ -1,7 +1,7 @@
 import json
 
-def log_iteration_debug(iteration_num, sequence, responses, timestamp_prefix, phase="Iteration"):
-    with open(f"logger/logs/{timestamp_prefix}_iteration_log.txt", "a") as log_file:
+def log_iteration_debug(iteration_num, sequence, responses, timestamp_prefix, out, phase="Iteration"):
+    with open(f"{out}/{timestamp_prefix}_iteration_log.txt", "a") as log_file:
         log_file.write(f"\n=== {phase} {iteration_num} ===\n")
         for i, (req, resp) in enumerate(zip(sequence, responses)):
             log_file.write(f"\n--- Request {i+1} ---\n")
