@@ -13,6 +13,10 @@ MUTATE_TYPE_CONFUSION_P = 0.3  # when mutating, prob of type-confusion vs edge-o
 MAX_STRING_LEN = 10000
 MAX_ARRAY_LEN = 10
 
+MUTATE_PATH_PROB = 0.3     # 30% of time fuzz path params
+MUTATE_BODY_PROB = 0.6     # 60% of time fuzz body fields
+MUTATE_BOTH_PROB = 0.1     # 10% of time fuzz both
+
 
 def mutate_request(request: Dict, schema: Dict) -> List[Dict]:
     """
@@ -85,14 +89,10 @@ def random_string(length):
 
 def deep_mutation(sequence: list, endpoints: list) -> list:
     """
-    Apply deep mutations to a full sequence of requests.
-
-      - Add optional fields.
-      - Mutate existing fields probabilistically using `mutate_bad_value`.
-      - Use schema information to pick sensible fuzz values (via generate_fuzz_value).
-      - Keep headers unchanged.
-
-    Returns a new mutated sequence (deep-copied).
+    Apply deep mutations to a full sequence of requests:
+      - Replace path parameters with fuzzed values.
+      - Populate all non-readOnly body fields.
+      - Mutate existing fields probabilistically.
     """
     mutated_sequence = []
 
@@ -104,48 +104,75 @@ def deep_mutation(sequence: list, endpoints: list) -> list:
             mutated_sequence.append(req)
             print(f"DEEP MUTATION ERROR, no ep found for: {req}")
             continue
-        
-        # Get request body properties
-        if ep.request_body:
-            schema = ep.request_body
-            props = schema.get("properties", {})
-            body = {}
-        else:
-            mutated_sequence.append(req)
-            print(f"WARNING: No request body found for endpoint: {ep.path} skipping mutation")
-            continue
-
-        # === Populate every field except readOnly
-        for name, definition in props.items():
-            # Resolve $ref if present
-            if "$ref" in definition:
-                definition = resolve_ref(definition, ep.root_spec)
-
-            print(f"Populating field: {name} → {definition}")
-
-            if definition.get("readOnly", False):
-                continue  # Skip read-only fields
-            
-            try:
-                # Always generate a base fuzzing value
-                value = generate_fuzz_value(definition)
-
-                # Occasionally mutate it further
-                if random.random() < MUTATE_EXISTING_PROB:
-                    value = mutate_bad_value(value, definition)
-
-                body[name] = value
-            except Exception as e:
-                print(f"⚠️ Error generating fuzz value for field '{name}' in {ep.path}: {e}")
+        mutation_mode = random.choices(["path", "body", "both"], weights=[MUTATE_PATH_PROB, MUTATE_BODY_PROB, MUTATE_BOTH_PROB],k=1)[0]
 
         # Copy original request
         mut_req = copy.deepcopy(req)
-        print(f"original req: {mut_req}")
+        #print(f"original req: {mut_req}")
 
-        mut_req["body"] = body
+        # === 1. Mutate path parameters with MUTATE_PATH_PROB 
+        if mutation_mode in ("path", "both"):
+            #Get url and path param
+            mutated_url = ep.path
+            if ep.path_params:
+                for param in ep.path_params:
+                    name = param["name"]
+                    schema = {"type": param.get("type"), "format": param.get("format", "")}
+
+                    # generate and maybe mutate fuzz value
+                    value = generate_fuzz_value(schema)
+                    if random.random() < MUTATE_EXISTING_PROB:
+                        value = mutate_bad_value(value, schema)
+
+                    # replace placeholder {name} in URL
+                    mutated_url = mutated_url.replace(f"{{{name}}}", str(value))
+            else:
+                #print(f"ℹ️ Skipping path mutation for {ep.method} {ep.path} — no path parameters.")
+                mutation_mode = "body"
+
+            mut_req["url"] = mutated_url
+
+        # === 2. Mutate / populate body (if any) with MUTATE_BODY_PROB
+        if mutation_mode in ("body", "both"):
+            # Get request body properties
+            if ep.request_body:
+                schema = ep.request_body
+                props = schema.get("properties", {})
+                body = {}
+            else:
+                mutated_sequence.append(mut_req)
+                #print(f"WARNING: No request body found for endpoint: {ep.method} {ep.path} skipping mutation")
+                continue
+
+            # === Populate every field except readOnly
+            for name, definition in props.items():
+                # Resolve $ref if present
+                if "$ref" in definition:
+                    definition = resolve_ref(definition, ep.root_spec)
+
+                #print(f"Populating field: {name} → {definition}")
+
+                if definition.get("readOnly", False):
+                    continue  # Skip read-only fields
+                
+                try:
+                    # Always generate a base fuzzing value
+                    value = generate_fuzz_value(definition)
+
+                    # Occasionally mutate it further
+                    if random.random() < MUTATE_EXISTING_PROB:
+                        value = mutate_bad_value(value, definition)
+
+                    body[name] = value
+                except Exception as e:
+                    print(f"⚠️ Error generating fuzz value for field '{name}' in {ep.path}: {e}")
+
+            mut_req["body"] = body
+
+        #Append mutated request to sequence
         mutated_sequence.append(mut_req) 
 
-        print(f"✅ Mutated request for {ep.method} {ep.path}: {list(body.keys())}")
+        #print(f"✅ Mutated request for {ep.method} {ep.path}: {list(body.keys())}")
     return mutated_sequence
 
 
@@ -318,7 +345,7 @@ def generate_fuzz_value(schema: Dict[str, Any]):
         return obj
 
     # fallback: return varied tokens (keeps as string)
-    print("FALLBACK for generate_fuzz_value")
+    #print(f"FALLBACK for generate_fuzz_value {schema}")
     return random.choice(["fuzz", "NULL", "null", None, "1234", "{}"])
 
 
@@ -374,5 +401,5 @@ def mutate_bad_value(value: Any, schema: Dict[str, Any]):
             return generate_fuzz_value({"type": "object"})
 
     # fallback: use generic fuzz value
-    print("FALLBACK for mutate_bad_value")
+    #print("FALLBACK for mutate_bad_value")
     return generate_fuzz_value({})
