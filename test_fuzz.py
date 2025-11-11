@@ -17,14 +17,16 @@ from utils.utils import sequence_signature
 
 # === Config from CLI ===
 cli = argparse.ArgumentParser(description="Run Marker-REST_API_Fuzzer")
-cli.add_argument("--spec", type=str, default="examples/target-ncs.json",
+cli.add_argument("--spec", type=str, default="examples/target-petclinic.json",
                     help="Path to OpenAPI specification (JSON/YAML)")
-cli.add_argument("--target", type=str, default="http://localhost:8080",
+cli.add_argument("--target", type=str, default="http://localhost:8080/petclinic",
                     help="Base URL of the target service")
 cli.add_argument("--time", type=int, default=300,
                     help="Maximum fuzzing time in seconds")
 cli.add_argument("--out", type=str, default="feedback/logs/",
                     help="Path to output files gneration")
+cli.add_argument("--deep-fuzz", type=bool, default=False,
+                    help="Enables deep fuzzing mode")
 
 args = cli.parse_args()
 
@@ -33,6 +35,7 @@ SPEC_PATH = args.spec
 BASE_URL = args.target
 MAX_TIME_SECONDS = args.time
 OUTPUT = args.out
+DEEP_FUZZ = args.deep_fuzz
 MUTATION_PROBABILITY = 0.4  
 # For adaptive mutation mode
 mutation_mode = False
@@ -157,7 +160,7 @@ while time.time() - start_time < MAX_TIME_SECONDS:
         break
 
     if not mutation_mode:
-        #extend sequence if in discovery mode
+        # extend sequence if in discovery mode
         try:
             next_ep = CHOOSE_COMPATIBLE_ENDPOINT(base_test, endpoints, dynamic_id_table)
             dprint(f"➕ Extending with: {next_ep.method} {next_ep.path}")
@@ -277,6 +280,11 @@ while time.time() - start_time < MAX_TIME_SECONDS:
 
     # Run TCL based mutation mode trigger logic
     if not mutation_mode:
+        
+        # Check fuzzing mode
+        if DEEP_FUZZ:
+            start_time = time.time() #reset time untill mutation mode is triggered
+
         current_score = total_TCL_score(cumulative_coverage, spec_info)
         if current_score >= 3:
             mutation_mode = True
