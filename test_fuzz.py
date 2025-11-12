@@ -17,9 +17,9 @@ from utils.utils import sequence_signature
 
 # === Config from CLI ===
 cli = argparse.ArgumentParser(description="Run Marker-REST_API_Fuzzer")
-cli.add_argument("--spec", type=str, default="examples/target-petclinic.json",
+cli.add_argument("--spec", type=str, default="examples/target-ncs.json",
                     help="Path to OpenAPI specification (JSON/YAML)")
-cli.add_argument("--target", type=str, default="http://localhost:8080/petclinic",
+cli.add_argument("--target", type=str, default="http://localhost:8080",
                     help="Base URL of the target service")
 cli.add_argument("--time", type=int, default=300,
                     help="Maximum fuzzing time in seconds")
@@ -75,6 +75,9 @@ cumulative_coverage = {
     "input_content_types": set()
 }
 seen_signatures = set()
+
+if (parser.basePath.strip() and parser.basePath != "/"):
+    BASE_URL = f"{BASE_URL}{parser.basePath}"
 
 # Use parsed authentication info
 auth_handler = AuthHandler(
@@ -161,6 +164,7 @@ while time.time() - start_time < MAX_TIME_SECONDS:
 
     if not mutation_mode:
         # extend sequence if in discovery mode
+        phase = "iteration"
         try:
             next_ep = CHOOSE_COMPATIBLE_ENDPOINT(base_test, endpoints, dynamic_id_table)
             dprint(f"➕ Extending with: {next_ep.method} {next_ep.path}")
@@ -207,6 +211,7 @@ while time.time() - start_time < MAX_TIME_SECONDS:
 
     else:
         # MUTATION MODE: mutate entire sequence
+        phase = "muatation"
         extended_sequence = deep_mutation(base_test["sequence"], endpoints)
         new_signature = True
 
@@ -245,7 +250,7 @@ while time.time() - start_time < MAX_TIME_SECONDS:
         last_response = responses[-1]
 
         # Producing log file
-        log_iteration_debug(i + 1, extended_sequence, responses, timestamp_prefix, OUTPUT)
+        log_iteration_debug(i + 1, extended_sequence, responses, timestamp_prefix, OUTPUT, phase=phase)
 
         # Response analysis for bugs
         response_analyzer.analyze(extended_sequence[-1], responses[-1])

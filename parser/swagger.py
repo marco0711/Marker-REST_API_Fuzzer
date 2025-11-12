@@ -26,6 +26,7 @@ class OpenAPIParser:
     def __init__(self, spec_path: str, config_path: str = "config.json"):
         self.spec_path = spec_path
         self.spec = self._load_spec()
+        self.basePath = self._find_base_path()
         self.version = self._detect_version()
         self.endpoints: List[Endpoint] = []
         self.requires_auth = False
@@ -36,6 +37,29 @@ class OpenAPIParser:
         self._check_auth_requirements()
         if self.config.get("auth_path"):
             self._attempt_auth()
+
+    def _find_base_path(self) -> str:
+        
+        base_path = ""
+
+        # --- OpenAPI 2.0 / Swagger ---
+        if "basePath" in self.spec:
+            base_path = self.spec.get("basePath", "").strip()
+
+        # --- OpenAPI 3.x ---
+        elif "servers" in self.spec:
+            servers = self.spec.get("servers", [])
+            if servers and isinstance(servers, list):
+                url = servers[0].get("url", "")
+                if url:
+                    try:
+                        from urllib.parse import urlparse
+                        parsed = urlparse(url)
+                        base_path = parsed.path or ""
+                    except Exception:
+                        pass
+
+        return base_path
 
     def _load_spec(self) -> Dict:
         with open(self.spec_path, 'r') as f:
