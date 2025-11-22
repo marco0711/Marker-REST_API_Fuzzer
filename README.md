@@ -15,5 +15,5 @@ python3 test_fuzz.py --target [targetURL] --spec [targetOpenAPI] --time [fuzzing
 
 --out: path to directory in which the results and iteration log will be created
 
---deep-fuzz: default to False, is specified and set to True it will use the whole time budget for the mutation phase.
+--deep-fuzz: default to False, if specified and set to True it will use the whole time budget for the mutation phase.
 Fuzzing will ensure a TCL score >= 3
